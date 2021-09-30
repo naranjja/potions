@@ -1,0 +1,101 @@
+.cup-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cup {
+    background: rgb(216, 216, 216);
+    border-bottom: 1px solid white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+}
+
+.cup-content {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+}
+
+.foam-quantity {
+    background-color: rgb(255, 250, 240);
+}
+
+.crema-quantity {
+    background-color: rgb(209, 140, 12);
+}
+
+.simple-syrup-quantity {
+    background-color: rgb(109, 87, 16);
+}
+
+.coffee-quantity {
+    background-color: rgb(56, 44, 32);
+}
+
+.milk-quantity {
+    background-color: rgb(255, 236, 213);
+}
+
+.water-quantity {
+    background-color: #bad5fa;
+}
+
+.chai-quantity {
+    background-color: #632e0c;
+}
+
+.matcha-quantity {
+    background-color: #93A035;
+}
+
+.dripped-coffee-quantity {
+    background-color: rgb(22, 17, 13);
+}
+
+.decaf-dripped-coffee-quantity {
+    background-color: rgb(61, 55, 53);
+}
+
+.fine-ground-coffee-quantity {
+    background-color: rgb(61, 55, 53);
+}
+
+.condensed-milk-quantity {
+    background-color: rgb(248, 213, 170);
+}
+
+.cream-quantity {
+    background-color: rgb(252, 243, 225);
+}
+
+.hot-chocolate-quantity {
+    background-color: rgb(39, 30, 11);
+}
+
+.instant-coffee-quantity {
+    background-color: rgb(36, 35, 32);
+}
+
+.half-and-half-quantity {
+    background-color: rgb(247, 237, 213);
+}
+
+.ice > img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.2;
+}
+
+.modal-body, .modal-body * {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+}
+
+.modal-video {
+    width: 100%;
+}

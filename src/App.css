@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.filter-labels {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.filter-labels > p {
+  float: left;
+  width: 100%;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.filter-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.filter-container > div {
+  float: left;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.coffee-name {
+  font-weight: "bold";
+  font-size: 30px;
+}
+
+.coffee-description {
+  margin-top: 20px;
+}
+
+.flag, .temperature {
+  width: 20px;
+  margin-right: 10px;
+  vertical-align: inherit;
+}
+
+.speed {
+  width: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.coffee-name, .coffee-glass-type {
+  font-family: 'Playfair Display', serif;
+}

@@ -1,0 +1,679 @@
+[
+  {
+    "name": "Ristretto",
+    "country": "italy",
+    "temperature": "hot",
+    "speed": 1,
+    "glassType": "demitasse",
+    "order": [
+      "coffee",
+      "crema"
+    ],
+    "coffeeOz": 0.75,
+    "steps": [
+      "Grind your coffee finer than usual",
+      "Brew 0.75oz of espresso during 15 seconds max"
+    ],
+    "video": "ju73OeM6eiI"
+  },
+  {
+    "name": "Espresso",
+    "country": "italy",
+    "temperature": "hot",
+    "speed": 1,
+    "glassType": "demitasse",
+    "order": [
+      "coffee",
+      "crema"
+    ],
+    "coffeeOz": 1,
+    "steps": [
+      "Brew 1oz of espresso during 15 seconds"
+    ],
+    "video": "y0XariiJiHk"
+  },
+  {
+    "name": "Espresso Doppio",
+    "country": "italy",
+    "temperature": "hot",
+    "speed": 1,
+    "glassType": "demitasse",
+    "order": [
+      "coffee",
+      "crema"
+    ],
+    "coffeeOz": 2,
+    "steps": [
+      "Brew 2oz of espresso during 18-25 seconds"
+    ],
+    "video": "PoZTOzFsORI"
+  },
+  {
+    "name": "Espressino",
+    "country": "italy",
+    "temperature": "hot",
+    "speed": 1,
+    "glassType": "demitasse",
+    "order": [
+      "coffee",
+      "crema",
+      "milk"
+    ],
+    "coffeeOz": 1,
+    "milkOz": 1,
+    "steps": [
+      "Brew 1oz of espresso during 15 seconds",
+      "Froth 1oz of cold milk until warm but no foam is present",
+      "Remove any foam with a spoon",
+      "Add frothed milk to coffee"
+    ],
+    "video": "_Sk0ayinaxM"
+  },
+  {
+    "name": "Piccolo Latte",
+    "country": "italy",
+    "temperature": "hot",
+    "speed": 2,
+    "glassType": "demitasse",
+    "order": [
+      "coffee",
+      "crema",
+      "milk",
+      "foam"
+    ],
+    "foamType": "low",
+    "milkOz": 1,
+    "coffeeOz": 1,
+    "steps": [
+      "Brew 1oz of espresso during 15 seconds",
+      "Froth 1oz of cold milk until silky and microfoam is present",
+      "Add frothed milk on top of coffee"
+    ],
+    "video": "4S7nrUZYAx0"
+  },
+  {
+    "name": "Café con Hielo",
+    "country": "spain",
+    "temperature": "cold",
+    "speed": 1,
+    "glassType": "demitasse",
+    "order": [
+      "coffee",
+      "crema"
+    ],
+    "coffeeOz": 1,
+    "ice": true,
+    "steps": [
+      "Brew 1oz of espresso during 15 seconds",
+      "Add some ice cubes"
+    ],
+    "video": "qV3dwWDk04Y"
+  },
+  {
+    "name": "Caffè Freddo",
+    "country": "italy",
+    "temperature": "cold",
+    "speed": 1,
+    "glassType": "demitasse",
+    "order": [
+      "coffee",
+      "crema"
+    ],
+    "coffeeOz": 2,
+    "ice": true,
+    "steps": [
+      "Brew 2oz of espresso during 18-25 seconds",
+      "Add some ice cubes"
+    ],
+    "video": "s-roLnsZ-F4"
+  },
+  {
+    "name": "Iced Espresso",
+    "country": "united states",
+    "temperature": "cold",
+    "speed": 1,
+    "glassType": "demitasse",
+    "order": [
+      "coffee",
+      "crema",
+      "simple-syrup",
+      "milk"
+    ],
+    "coffeeOz": 1,
+    "milkOz": 1,
+    "ice": true,
+    "steps": [
+      "Brew 1oz of espresso during 15 seconds",
+      "Mix coffee with 1oz of cold milk and simple syrup",
+      "Pour mixture over demitasse with ice cubes on it"
+    ]
+  },
+  {
+    "name": "Café Bombón",
+    "country": "spain",
+    "temperature": "hot",
+    "speed": 2,
+    "glassType": "demitasse",
+    "order": [
+      "coffee",
+      "crema",
+      "condensed-milk"
+    ],
+    "coffeeOz": 1,
+    "condensedMilkOz": 1,
+    "steps": [
+      "Brew 1oz of espresso during 15 seconds",
+      "Add 1oz of condensed milk on top"
+    ]
+  },
+  {
+    "name": "Raf",
+    "country": "russia",
+    "temperature": "hot",
+    "speed": 2,
+    "glassType": "demitasse",
+    "order": [
+      "coffee",
+      "crema",
+      "cream"
+    ],
+    "coffeeOz": 1,
+    "creamOz": 1,
+    "steps": [
+      "Brew 1oz of espresso during 15 seconds",
+      "Add 1.5 tablespoons of vanilla sugar to coffee",
+      "Top drink with 1oz of cream"
+    ]
+  },
+  {
+    "name": "Breve",
+    "country": "italy",
+    "temperature": "hot",
+    "speed": 3,
+    "glassType": "tasse 5oz",
+    "order": [
+      "coffee",
+      "crema",
+      "half-and-half",
+      "foam"
+    ],
+    "foamType": "low",
+    "halfAndHalfOz": 2,
+    "coffeeOz": 2,
+    "steps": [
+      "Brew 2oz of espresso during 18-25 seconds",
+      "Froth 2oz of cold half and half until foamy",
+      "Add frothed half and half on top of coffee"
+    ]
+  },
+  {
+    "name": "Cortado",
+    "aka": [
+      "Gibraltar"
+    ],
+    "country": "spain",
+    "temperature": "hot",
+    "speed": 2,
+    "glassType": "tasse 5oz",
+    "order": [
+      "coffee",
+      "crema",
+      "milk",
+      "foam"
+    ],
+    "foamType": "low",
+    "milkOz": 2,
+    "coffeeOz": 2,
+    "steps": [
+      "Brew 2oz of espresso during 18-25 seconds",
+      "Froth 2oz of cold milk until silky and microfoam is present",
+      "Add frothed milk on top of coffee"
+    ]
+  },
+  {
+    "name": "Cortadito",
+    "country": "spain",
+    "temperature": "hot",
+    "speed": 1,
+    "glassType": "tasse 5oz",
+    "order": [
+      "coffee",
+      "crema",
+      "milk"
+    ],
+    "milkOz": 2,
+    "coffeeOz": 2,
+    "steps": [
+      "Brew 2oz of espresso during 18-25 seconds",
+      "Froth 2oz of cold milk until warm but no foam is present",
+      "Remove any foam with a spoon",
+      "Add frothed milk to coffee"
+    ]
+  },
+  {
+    "name": "Macchiato",
+    "aka": [
+      "Espresso Macchiato",
+      "Caffè Macchiato"
+    ],
+    "country": "italy",
+    "temperature": "hot",
+    "speed": 2,
+    "glassType": "tasse 5oz",
+    "order": [
+      "coffee",
+      "crema",
+      "milk",
+      "foam"
+    ],
+    "foamType": "high",
+    "milkOz": 1,
+    "coffeeOz": 2,
+    "steps": [
+      "Brew 2oz of espresso during 18-25 seconds",
+      "Froth 1oz of cold milk until silky and microfoam is present",
+      "Stain coffee with frothed milk, pouring over a small area"
+    ]
+  },
+  {
+    "name": "Lungo",
+    "country": "italy",
+    "temperature": "hot",
+    "speed": 1,
+    "glassType": "tasse 5oz",
+    "order": [
+      "coffee",
+      "crema"
+    ],
+    "coffeeOz": 3,
+    "steps": [
+      "Grind your coffee coarser than usual",
+      "Brew 3oz of espresso during 40 seconds max"
+    ]
+  },
+  {
+    "name": "Flat White",
+    "country": "australia",
+    "temperature": "hot",
+    "speed": 2,
+    "glassType": "tasse 7oz",
+    "order": [
+      "coffee",
+      "crema",
+      "milk",
+      "foam"
+    ],
+    "foamType": "very low",
+    "coffeeOz": 2,
+    "milkOz": 3,
+    "steps": [
+      "Brew 2oz of espresso during 18-25 seconds",
+      "Froth 3oz of cold milk until as silky as possible and a thin layer of microfoam is present",
+      "Add frothed milk on top of coffee"
+    ]
+  },
+  {
+    "name": "Americano",
+    "country": "united states",
+    "temperature": "hot",
+    "speed": 1,
+    "glassType": "tasse 7oz",
+    "order": [
+      "coffee",
+      "water"
+    ],
+    "coffeeOz": 2,
+    "waterOz": 4,
+    "steps": [
+      "Brew 2oz of espresso during 18-25 seconds",
+      "Add 4oz of hot water to coffee"
+    ]
+  },
+  {
+    "name": "Long Black",
+    "country": "australia",
+    "temperature": "hot",
+    "speed": 1,
+    "glassType": "tasse 7oz",
+    "order": [
+      "water",
+      "coffee",
+      "crema"
+    ],
+    "coffeeOz": 2,
+    "waterOz": 4,
+    "steps": [
+      "Brew 2oz of espresso during 18-25 seconds on a demitasse",
+      "Add 4oz of hot water to a 7oz tasse",
+      "Pour coffee on hot water, to preserve crema"
+    ]
+  },
+  {
+    "name": "Cà Phê Sữa Đá",
+    "aka": [
+      "Cà phê đá",
+      "Cafe da"
+    ],
+    "country": "vietnam",
+    "temperature": "cold",
+    "speed": 3,
+    "glassType": "tasse 7oz",
+    "order": [
+      "condensed-milk",
+      "coffee"
+    ],
+    "coffeeOz": 6,
+    "condensedMilkOz": 1,
+    "ice": true,
+    "steps": [
+      "Add 1oz of condensed milk to a 7oz tasse",
+      "Get the darkest coffee you have",
+      "Grind your coffee finer than usual",
+      "Slow brew 6oz of espresso (3 espresso doppi during 20-35 seconds each)",
+      "Stir the coffee with the condensed milk",
+      "Add some ice"
+    ]
+  },
+  {
+    "name": "Café con Leche",
+    "country": "spain",
+    "temperature": "hot",
+    "speed": 1,
+    "glassType": "tasse 7oz",
+    "order": [
+      "coffee",
+      "milk"
+    ],
+    "coffeeOz": 2,
+    "milkOz": 3,
+    "steps": [
+      "Brew 2oz of espresso during 18-25 seconds on a demitasse",
+      "Stir in 3oz of warm milk",
+      "Add 2 tablespoons of sugar"
+    ]
+  },
+  {
+    "name": "Cappuccino",
+    "country": "italy",
+    "temperature": "hot",
+    "speed": 2,
+    "glassType": "cappuccino",
+    "order": [
+      "coffee",
+      "crema",
+      "milk",
+      "foam"
+    ],
+    "foamType": "high",
+    "coffeeOz": 2,
+    "milkOz": 4,
+    "steps": [
+      "Brew 2oz of espresso during 18-25 seconds",
+      "Froth 4oz of cold milk until silky and foamy",
+      "Stir cup to stain the walls with coffee",
+      "Pour frothed milk from the long side, in the center of the cup",
+      "Make sure to have foam at the top",
+      "Add cocoa powder on top"
+    ]
+  },
+  {
+    "name": "Caffè Latte",
+    "country": "italy",
+    "temperature": "hot",
+    "speed": 3,
+    "glassType": "cappuccino",
+    "order": [
+      "coffee",
+      "crema",
+      "milk",
+      "foam"
+    ],
+    "foamType": "low",
+    "coffeeOz": 2,
+    "milkOz": 3,
+    "steps": [
+      "Brew 2oz of espresso during 18-25 seconds",
+      "Froth 3oz of cold milk until silky and microfoam is present",
+      "Pour frother milk from the beak, in 2 steps",
+      "First, add from a higher distance and mix in milk with the stream",
+      "Second, add from a lower distance and cut the milk forward"
+    ]
+  },
+  {
+    "name": "Café au Lait",
+    "country": "france",
+    "temperature": "hot",
+    "speed": 2,
+    "glassType": "cappuccino",
+    "order": [
+      "coffee",
+      "crema",
+      "milk",
+      "foam"
+    ],
+    "foamType": "low",
+    "coffeeOz": 3,
+    "milkOz": 3,
+    "steps": [
+      "Brew 3oz of espresso for 40 seconds max",
+      "Froth 3oz of cold milk until foamy and silky",
+      "Reserve the foam before mixing with coffee",
+      "Add frothed milk to coffee",
+      "Add foam on top"
+    ]
+  },
+  {
+    "name": "Matcha Latte",
+    "country": "japan",
+    "temperature": "hot",
+    "speed": 3,
+    "glassType": "cappuccino",
+    "order": [
+      "matcha",
+      "milk",
+      "foam"
+    ],
+    "foamType": "low",
+    "matchaOz": 2,
+    "milkOz": 4,
+    "steps": [
+      "Sift 1 teaspoon of matcha into a cappuccino mug",
+      "Pour 2oz of water on mug and stir until matcha dissolves",
+      "Froth 4oz of cold milk until silky and microfoam is present",
+      "Add frothed milk on top of matcha"
+    ]
+  },
+  {
+    "name": "Chai Latte",
+    "country": "india",
+    "temperature": "hot",
+    "speed": 4,
+    "glassType": "cappuccino",
+    "order": [
+      "chai",
+      "milk",
+      "foam"
+    ],
+    "foamType": "low",
+    "chaiOz": 2,
+    "milkOz": 4,
+    "steps": [
+      "Make 2oz of chai tea using 2oz of water and a 1oz of chai spices/black tea",
+      "Pour tea onto a cappuccino mug",
+      "Froth 4oz of cold milk until silky and microfoam is present",
+      "Add frothed milk on top of tea"
+    ]
+  },
+  {
+    "name": "Dirty Chai",
+    "country": "india",
+    "temperature": "hot",
+    "speed": 4,
+    "glassType": "cappuccino",
+    "order": [
+      "coffee",
+      "chai",
+      "milk",
+      "foam"
+    ],
+    "foamType": "low",
+    "coffeeOz": 2,
+    "chaiOz": 2,
+    "milkOz": 3,
+    "steps": [
+      "Make 2oz of chai tea using 2oz of water and a 1oz of chai spices/black tea",
+      "Pour tea onto a cappuccino mug",
+      "Brew 2oz of espresso for 18-25 seconds",
+      "Pour coffee onto mug and mix",
+      "Froth 3oz of cold milk until silky and microfoam is present",
+      "Add frothed milk on top of mug"
+    ]
+  },
+  {
+    "name": "Mocha",
+    "country": "yemen",
+    "temperature": "hot",
+    "speed": 5,
+    "glassType": "cappuccino",
+    "order": [
+      "coffee",
+      "hot-chocolate",
+      "milk",
+      "foam"
+    ],
+    "foamType": "low",
+    "coffeeOz": 2,
+    "milkOz": 2,
+    "hotChocolateOz": 2,
+    "steps": [
+      "Make 2oz of hot chocolate",
+      "Pour chocolate onto a cappuccino mug",
+      "Brew 2oz of espresso for 18-25 seconds",
+      "Pour coffee onto mug and mix",
+      "Froth 2oz of cold milk until silky and microfoam is present",
+      "Add frothed milk on top",
+      "Add whipped cream with cocoa powder sprinkles to top off drink"
+    ]
+  },
+  {
+    "name": "Red Eye",
+    "country": "united states",
+    "temperature": "hot",
+    "speed": 5,
+    "glassType": "cappuccino",
+    "order": [
+      "dripped-coffee",
+      "coffee",
+      "crema"
+    ],
+    "coffeeOz": 1,
+    "drippedCoffeeOz": 4,
+    "steps": [
+      "Make 4oz of dripped coffee (can use french press or mocha pot as well)",
+      "Pour coffee onto a cappuccino mug",
+      "Brew 1oz of espresso during 15 seconds onto a demitasse",
+      "Pour espresso onto cappuccino mug"
+    ]
+  },
+  {
+    "name": "Black Eye",
+    "country": "united states",
+    "temperature": "hot",
+    "speed": 5,
+    "glassType": "cappuccino",
+    "order": [
+      "dripped-coffee",
+      "coffee",
+      "crema"
+    ],
+    "coffeeOz": 2,
+    "drippedCoffeeOz": 4,
+    "steps": [
+      "Make 4oz of dripped coffee (can use french press or mocha pot as well)",
+      "Pour coffee onto a cappuccino mug",
+      "Brew 2oz of espresso during 18-25 seconds onto a demitasse",
+      "Pour espresso onto cappuccino mug"
+    ]
+  },
+  {
+    "name": "Dead Eye",
+    "country": "united states",
+    "temperature": "hot",
+    "speed": 5,
+    "glassType": "cappuccino",
+    "order": [
+      "dripped-coffee",
+      "coffee",
+      "crema"
+    ],
+    "coffeeOz": 3,
+    "drippedCoffeeOz": 4,
+    "steps": [
+      "Make 4oz of dripped coffee (can use french press or mocha pot as well)",
+      "Pour coffee onto a cappuccino mug",
+      "Brew 3oz of espresso for 40 seconds max onto a 5oz tasse",
+      "Pour espresso onto cappuccino mug"
+    ]
+  },
+  {
+    "name": "Lazy Eye",
+    "country": "united states",
+    "temperature": "hot",
+    "speed": 5,
+    "glassType": "cappuccino",
+    "order": [
+      "decaf-dripped-coffee",
+      "coffee",
+      "crema"
+    ],
+    "coffeeOz": 3,
+    "decafDrippedCoffeeOz": 4,
+    "steps": [
+      "Make 4oz of dripped decaf coffee (can use french press or mocha pot as well)",
+      "Pour coffee onto a cappuccino mug",
+      "Brew 3oz of espresso for 40 seconds max onto a 5oz tasse",
+      "Pour espresso onto cappuccino mug"
+    ]
+  },
+  {
+    "name": "Latte Macchiato",
+    "country": "united states",
+    "temperature": "hot",
+    "speed": 4,
+    "glassType": "tumbler",
+    "order": [
+      "milk",
+      "coffee",
+      "foam"
+    ],
+    "foamType": "high",
+    "coffeeOz": 2,
+    "milkOz": 5,
+    "steps": [
+      "Froth 5oz of cold milk until foamy and silky",
+      "Pour milk onto a tumbler glass",
+      "Let the milk sit, so that the foam separates from the milk",
+      "Brew 2oz of espresso during 18-25 seconds onto a demitasse",
+      "Stain milk with espresso, pouring over a small area, slowly"
+    ]
+  },
+  {
+    "name": "Frappé",
+    "country": "greece",
+    "temperature": "cold",
+    "speed": 2,
+    "glassType": "tumbler",
+    "order": [
+      "milk",
+      "instant-coffee"
+    ],
+    "instantCoffeeOz": 2,
+    "milkOz": 5.5,
+    "ice": true,
+    "steps": [
+      "Blend 2oz of instant coffee and 0.5oz of sugar with 5.5oz milk",
+      "Pour mixture onto a tumbler glass with ice cubes",
+      "Add whipped cream with cocoa powder sprinkles to top off drink"
+    ]
+  }
+]
