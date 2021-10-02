@@ -2,29 +2,42 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { useState } from 'react';
-import Select from 'react-select'
+import Select, { components } from 'react-select'
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { CoffeeCup } from "./components";
 import { parsedRecipes, countries, glassTypes, temperatures, speeds } from "./lib/recipeParser";
-import { getFlag } from "./lib/utils";
+import { getTemperatureIcon, getFlag, makespeedScale } from "./lib/utils";
 
-function makespeedScale (speed) {
-  return <div>
-    { [...Array(speed)].map((_, i) => (
-      <img 
-        key={i.toString()}
-        className="speed" 
-        alt={`${speed}-speed`} 
-        src={`${process.env.PUBLIC_URL}/icons/clock.png`} 
-      />
-    )) }
-  </div>
-}
+const TemperatureOption = (props) => (
+  <components.Option {...props}>
+    <div>
+      { getTemperatureIcon(props.data.value) } { props.data.label }
+    </div>
+  </components.Option>
+);
+
+const SpeedOption = (props) => (
+  <components.Option {...props}>
+    <div>
+      { makespeedScale(props.data.value) } { props.data.label }
+    </div>
+  </components.Option>
+);
+
+const CountryOption = (props) => (
+  <components.Option {...props}>
+    <div>
+      { getFlag(props.data.value) } { props.data.label }
+    </div>
+  </components.Option>
+);
 
 function App() {
   
@@ -39,12 +52,19 @@ function App() {
       <Container>
         <Form className="filters">
           <Row>
-            <Form.Group as={Col} md={3} xs={12}>
-              <Form.Label>Temperature</Form.Label>
+            <Form.Group as={Col} xs={12} lg={3}>
+              <Form.Label>
+                <FontAwesomeIcon className="filter-label-icon" icon="thermometer-half" />
+                Temperature
+              </Form.Label>
               <Select 
                 menuPortalTarget={document.body} 
-                styles={{ menuPortal: base => ({ ...base, zIndex: 9999 }) }}
+                styles={{ 
+                  control: base => ({...base, padding: 5}), 
+                  menuPortal: base => ({ ...base, zIndex: 9999 }) 
+                }}
                 options={temperatures} 
+                components={{ Option: TemperatureOption }}
                 value={temperature}
                 onChange={s => {
                   const recipesCopy = parsedRecipes.slice(0);
@@ -63,12 +83,19 @@ function App() {
                 }}
               />
             </Form.Group>
-            <Form.Group as={Col} md={3} xs={12}>
-              <Form.Label>Speed</Form.Label>
+            <Form.Group as={Col} xs={12} lg={3}>
+              <Form.Label>
+                <FontAwesomeIcon className="filter-label-icon" icon="clock" />
+                Speed
+              </Form.Label>
               <Select 
                 menuPortalTarget={document.body} 
-                styles={{ menuPortal: base => ({ ...base, zIndex: 9999 }) }}
+                styles={{ 
+                  control: base => ({...base, padding: 5}), 
+                  menuPortal: base => ({ ...base, zIndex: 9999 }) 
+                }}
                 options={speeds} 
+                components={{ Option: SpeedOption }}
                 value={speed}
                 onChange={s => {
                   const recipesCopy = parsedRecipes.slice(0);
@@ -87,12 +114,19 @@ function App() {
                 }}
               />
             </Form.Group>
-            <Form.Group as={Col} md={3} xs={12}>
-            <Form.Label>Country</Form.Label>
+            <Form.Group as={Col} xs={12} lg={3}>
+              <Form.Label>
+                <FontAwesomeIcon className="filter-label-icon" icon="globe-americas" />
+                Country
+              </Form.Label>
               <Select 
                 menuPortalTarget={document.body} 
-                styles={{ menuPortal: base => ({ ...base, zIndex: 9999 }) }}
+                styles={{ 
+                  control: base => ({...base, padding: 5}), 
+                  menuPortal: base => ({ ...base, zIndex: 9999 }) 
+                }}
                 options={countries} 
+                components={{ Option: CountryOption }}
                 value={country}
                 onChange={s => {
                   const recipesCopy = parsedRecipes.slice(0);
@@ -111,11 +145,17 @@ function App() {
                 }}
               />
             </Form.Group>
-            <Form.Group as={Col} md={3} xs={12}>
-              <Form.Label>Glass type</Form.Label>
+            <Form.Group as={Col} xs={12} lg={3}>
+              <Form.Label>
+                <FontAwesomeIcon className="filter-label-icon" icon="glass-whiskey" />
+                Glass type
+              </Form.Label>
               <Select 
                 menuPortalTarget={document.body} 
-                styles={{ menuPortal: base => ({ ...base, zIndex: 9999 }) }}
+                styles={{ 
+                  control: base => ({...base, padding: 5}), 
+                  menuPortal: base => ({ ...base, zIndex: 9999 }) 
+                }}
                 options={glassTypes} 
                 value={glassType}
                 onChange={s => {
@@ -135,10 +175,25 @@ function App() {
                 }}
               />
             </Form.Group>
+            <Form.Group as={Col} xs={12} md={12}>
+              <div className="d-grid">
+                <Button variant="secondary" size="lg" onClick={() => {
+                  setTemperature(null);
+                  setSpeed(null);
+                  setCountry(null);
+                  setGlassType(null);
+                  const recipesCopy = parsedRecipes.slice(0);
+                  setRecipes(recipesCopy);
+                }}>
+                  <FontAwesomeIcon className="filter-label-icon" icon="trash-alt" />
+                  Reset filters
+                </Button>
+              </div>
+            </Form.Group>
           </Row>
         </Form>
 
-        <Row xs={1} md={3} className="g-3">
+        <Row xs={1} md={2} xl={3} className="g-3">
           { recipes.map((x, i) => (
             <Col key={ i.toString() }>
               <Card>

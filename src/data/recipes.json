@@ -4,7 +4,7 @@
     "country": "italy",
     "temperature": "hot",
     "speed": 1,
-    "glassType": "demitasse",
+    "glassType": "3oz demitasse",
     "order": [
       "coffee",
       "crema"
@@ -21,7 +21,7 @@
     "country": "italy",
     "temperature": "hot",
     "speed": 1,
-    "glassType": "demitasse",
+    "glassType": "3oz demitasse",
     "order": [
       "coffee",
       "crema"
@@ -37,7 +37,7 @@
     "country": "italy",
     "temperature": "hot",
     "speed": 1,
-    "glassType": "demitasse",
+    "glassType": "3oz demitasse",
     "order": [
       "coffee",
       "crema"
@@ -53,7 +53,7 @@
     "country": "cuba",
     "temperature": "hot",
     "speed": 1,
-    "glassType": "demitasse",
+    "glassType": "3oz demitasse",
     "order": [
       "coffee",
       "crema"
@@ -71,7 +71,7 @@
     "country": "italy",
     "temperature": "hot",
     "speed": 1,
-    "glassType": "demitasse",
+    "glassType": "3oz demitasse",
     "order": [
       "coffee",
       "crema",
@@ -92,7 +92,7 @@
     "country": "italy",
     "temperature": "hot",
     "speed": 2,
-    "glassType": "demitasse",
+    "glassType": "3oz demitasse",
     "order": [
       "coffee",
       "crema",
@@ -114,7 +114,7 @@
     "country": "spain",
     "temperature": "cold",
     "speed": 1,
-    "glassType": "demitasse",
+    "glassType": "3oz demitasse",
     "order": [
       "coffee",
       "crema"
@@ -132,7 +132,7 @@
     "country": "italy",
     "temperature": "cold",
     "speed": 1,
-    "glassType": "demitasse",
+    "glassType": "3oz demitasse",
     "order": [
       "coffee",
       "crema"
@@ -150,7 +150,7 @@
     "country": "united states",
     "temperature": "cold",
     "speed": 1,
-    "glassType": "demitasse",
+    "glassType": "3oz demitasse",
     "order": [
       "coffee",
       "crema",
@@ -172,7 +172,7 @@
     "country": "spain",
     "temperature": "hot",
     "speed": 2,
-    "glassType": "demitasse",
+    "glassType": "3oz demitasse",
     "order": [
       "condensed-milk",
       "coffee",
@@ -197,7 +197,7 @@
     "country": "russia",
     "temperature": "hot",
     "speed": 2,
-    "glassType": "demitasse",
+    "glassType": "3oz demitasse",
     "order": [
       "coffee",
       "crema",
@@ -218,7 +218,7 @@
     "country": "italy",
     "temperature": "hot",
     "speed": 3,
-    "glassType": "tasse 5oz",
+    "glassType": "5oz tasse",
     "order": [
       "coffee",
       "crema",
@@ -243,7 +243,7 @@
     "country": "spain",
     "temperature": "hot",
     "speed": 2,
-    "glassType": "tasse 5oz",
+    "glassType": "5oz tasse",
     "order": [
       "coffee",
       "crema",
@@ -265,7 +265,7 @@
     "country": "cuba",
     "temperature": "hot",
     "speed": 1,
-    "glassType": "tasse 5oz",
+    "glassType": "5oz tasse",
     "order": [
       "coffee",
       "crema",
@@ -293,7 +293,7 @@
     "country": "italy",
     "temperature": "hot",
     "speed": 2,
-    "glassType": "tasse 5oz",
+    "glassType": "5oz tasse",
     "order": [
       "coffee",
       "crema",
@@ -315,7 +315,7 @@
     "country": "italy",
     "temperature": "hot",
     "speed": 1,
-    "glassType": "tasse 5oz",
+    "glassType": "5oz tasse",
     "order": [
       "coffee",
       "crema"
@@ -332,7 +332,7 @@
     "country": "australia",
     "temperature": "hot",
     "speed": 2,
-    "glassType": "tasse 7oz",
+    "glassType": "7oz tasse",
     "order": [
       "coffee",
       "crema",
@@ -354,7 +354,7 @@
     "country": "united states",
     "temperature": "hot",
     "speed": 1,
-    "glassType": "tasse 7oz",
+    "glassType": "7oz tasse",
     "order": [
       "coffee",
       "water"
@@ -372,7 +372,7 @@
     "country": "australia",
     "temperature": "hot",
     "speed": 1,
-    "glassType": "tasse 7oz",
+    "glassType": "7oz tasse",
     "order": [
       "water",
       "coffee",
@@ -392,7 +392,7 @@
     "country": "spain",
     "temperature": "hot",
     "speed": 1,
-    "glassType": "tasse 7oz",
+    "glassType": "7oz tasse",
     "order": [
       "coffee",
       "milk"
@@ -412,7 +412,7 @@
     "country": "italy",
     "temperature": "hot",
     "speed": 2,
-    "glassType": "cappuccino",
+    "glassType": "8oz cappuccino mug",
     "order": [
       "coffee",
       "crema",
@@ -436,7 +436,7 @@
     "country": "italy",
     "temperature": "hot",
     "speed": 3,
-    "glassType": "cappuccino",
+    "glassType": "8oz cappuccino mug",
     "order": [
       "coffee",
       "crema",
@@ -459,7 +459,7 @@
     "country": "france",
     "temperature": "hot",
     "speed": 2,
-    "glassType": "cappuccino",
+    "glassType": "8oz cappuccino mug",
     "order": [
       "coffee",
       "crema",
@@ -482,7 +482,7 @@
     "country": "japan",
     "temperature": "hot",
     "speed": 3,
-    "glassType": "cappuccino",
+    "glassType": "8oz cappuccino mug",
     "order": [
       "matcha",
       "milk",
@@ -503,7 +503,7 @@
     "country": "india",
     "temperature": "hot",
     "speed": 4,
-    "glassType": "cappuccino",
+    "glassType": "8oz cappuccino mug",
     "order": [
       "chai",
       "milk",
@@ -524,7 +524,7 @@
     "country": "india",
     "temperature": "hot",
     "speed": 4,
-    "glassType": "cappuccino",
+    "glassType": "8oz cappuccino mug",
     "order": [
       "coffee",
       "chai",
@@ -549,7 +549,7 @@
     "country": "yemen",
     "temperature": "hot",
     "speed": 5,
-    "glassType": "cappuccino",
+    "glassType": "8oz cappuccino mug",
     "order": [
       "coffee",
       "hot-chocolate",
@@ -575,7 +575,7 @@
     "country": "united states",
     "temperature": "hot",
     "speed": 5,
-    "glassType": "cappuccino",
+    "glassType": "8oz cappuccino mug",
     "order": [
       "dripped-coffee",
       "coffee",
@@ -595,7 +595,7 @@
     "country": "united states",
     "temperature": "hot",
     "speed": 5,
-    "glassType": "cappuccino",
+    "glassType": "8oz cappuccino mug",
     "order": [
       "dripped-coffee",
       "coffee",
@@ -615,7 +615,7 @@
     "country": "united states",
     "temperature": "hot",
     "speed": 5,
-    "glassType": "cappuccino",
+    "glassType": "8oz cappuccino mug",
     "order": [
       "dripped-coffee",
       "coffee",
@@ -635,7 +635,7 @@
     "country": "united states",
     "temperature": "hot",
     "speed": 5,
-    "glassType": "cappuccino",
+    "glassType": "8oz cappuccino mug",
     "order": [
       "decaf-dripped-coffee",
       "coffee",
@@ -659,7 +659,7 @@
     "country": "vietnam",
     "temperature": "cold",
     "speed": 4,
-    "glassType": "tumbler",
+    "glassType": "11oz tumbler glass",
     "order": [
       "condensed-milk",
       "coffee",
@@ -687,7 +687,7 @@
     "country": "united states",
     "temperature": "hot",
     "speed": 4,
-    "glassType": "tumbler",
+    "glassType": "11oz tumbler glass",
     "order": [
       "milk",
       "coffee",
@@ -709,7 +709,7 @@
     "country": "greece",
     "temperature": "cold",
     "speed": 2,
-    "glassType": "tumbler",
+    "glassType": "11oz tumbler glass",
     "order": [
       "milk",
       "instant-coffee"

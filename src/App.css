@@ -53,6 +53,10 @@
   font-weight: bold;
 }
 
+.filter-label-icon {
+  margin-right: 10px;
+}
+
 .col .card {
   border: none;
   margin-bottom: 40px;

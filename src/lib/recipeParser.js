@@ -2,31 +2,31 @@ import recipes from "../data/recipes.json";
 import { toTitleCase } from "./utils";
 
 const glassTypeMap = {
-    demitasse: {
+    "3oz demitasse": {
         capacityOz: 3,
         width: 250,
         height: 300,
         radius: 80,
     },
-    "tasse 5oz": {
+    "5oz tasse": {
         capacityOz: 5,
         width: 300,
         height: 400,
         radius: 100,
     },
-    "tasse 7oz": {
+    "7oz tasse": {
         capacityOz: 7,
         width: 350,
         height: 400,
         radius: 100,
     },
-    cappuccino: {
+    "8oz cappuccino mug": {
         capacityOz: 8,
         width: 350,
         height: 256,
         radius: 64,
     },
-    tumbler: {
+    "11oz tumbler glass": {
         capacityOz: 11,
         width: 256,
         height: 464,
