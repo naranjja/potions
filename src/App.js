@@ -11,7 +11,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import { CoffeeCup } from "./components";
+import { CoffeeCup, Footer } from "./components";
 import { parsedRecipes, countries, glassTypes, temperatures, speeds } from "./lib/recipeParser";
 import { getTemperatureIcon, getFlag, makespeedScale } from "./lib/utils";
 
@@ -49,7 +49,13 @@ function App() {
 
   return (
     <div className="App">
-      <Container>
+      <Container className="main-container">
+        <div className="title">
+          Kuofe
+        </div>
+        <div className="subtitle">
+          A simplified collection of coffee recipes I made out of boredom.
+        </div>
         <Form className="filters">
           <Row>
             <Form.Group as={Col} xs={12} lg={3}>
@@ -214,6 +220,7 @@ function App() {
           )) }
         </Row>
       </Container>
+      <Footer text="Made with ❤️ by Jose Naranjo" />
     </div>
   );
 }

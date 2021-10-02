@@ -73,7 +73,7 @@ export default function CoffeeCup (props) {
     const handleCloseModal = () => setShowModal(false);
 
     return (
-      <>
+      <div>
         <div 
           className="cup-container"
           onClick={handleShowModal}
@@ -125,6 +125,6 @@ export default function CoffeeCup (props) {
             />
           </Modal.Body>
         </Modal>
-      </>
+      </div>
     );
   }
