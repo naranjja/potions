@@ -10,27 +10,27 @@ const glassTypeMap = {
     },
     "tasse 5oz": {
         capacityOz: 5,
-        width: 330,
+        width: 300,
         height: 400,
         radius: 100,
     },
     "tasse 7oz": {
         capacityOz: 7,
-        width: 370,
-        height: 400,
-        radius: 50,
-    },
-    cappuccino: {
-        capacityOz: 8,
-        width: 500,
+        width: 350,
         height: 400,
         radius: 100,
     },
+    cappuccino: {
+        capacityOz: 8,
+        width: 350,
+        height: 256,
+        radius: 64,
+    },
     tumbler: {
         capacityOz: 11,
-        width: 320,
-        height: 580,
-        radius: 40,
+        width: 256,
+        height: 464,
+        radius: 32,
     },    
 };
 

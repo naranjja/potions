@@ -11,6 +11,9 @@ function generateCupContent (props) {
     if (x === "crema" || x === "simple-syrup") {
       heightPixels = 20;
     }
+    if (isNaN(heightPixels)) {
+      console.error(`Invalid height for ${x} in ${props.name}`);
+    }
     const fontSize = 17;
     const fontColor = (function () {
       switch (x) {

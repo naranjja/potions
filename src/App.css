@@ -45,33 +45,17 @@
   }
 }
 
-.filter-labels {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  margin-top: 20px;
+.filters {
+  margin-bottom: 50px;
 }
-
-.filter-labels > p {
-  float: left;
-  width: 100%;
+.filters > .row > div {
+  margin-top: 30px;
   font-weight: bold;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
-.filter-container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-.filter-container > div {
-  float: left;
-  width: 100%;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 20px;
+.col .card {
+  border: none;
+  margin-bottom: 40px;
 }
 
 .coffee-name {

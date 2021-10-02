@@ -179,6 +179,7 @@
       "crema",
       "foam"
     ],
+    "foamType": "low",
     "coffeeOz": 1,
     "condensedMilkOz": 1,
     "milkOz": 1,
@@ -383,33 +384,8 @@
       "Brew 2oz of espresso during 18-25 seconds on a demitasse",
       "Add 4oz of hot water to a 7oz tasse",
       "Pour coffee on hot water, to preserve crema"
-    ]
-  },
-  {
-    "name": "Cà Phê Sữa Đá",
-    "aka": [
-      "Cà phê đá",
-      "Cafe da"
     ],
-    "country": "vietnam",
-    "temperature": "cold",
-    "speed": 3,
-    "glassType": "tasse 7oz",
-    "order": [
-      "condensed-milk",
-      "coffee"
-    ],
-    "coffeeOz": 6,
-    "condensedMilkOz": 1,
-    "ice": true,
-    "steps": [
-      "Add 1oz of condensed milk to a 7oz tasse",
-      "Get the darkest coffee you have",
-      "Grind your coffee finer than usual",
-      "Slow brew 6oz of espresso (3 espresso doppi during 20-35 seconds each)",
-      "Stir the coffee with the condensed milk",
-      "Add some ice"
-    ]
+    "video": "rvnjnxH1tys"
   },
   {
     "name": "Café con Leche",
@@ -428,7 +404,8 @@
       "Brew 2oz of espresso during 18-25 seconds on a demitasse",
       "Stir in 3oz of warm milk",
       "Add 2 tablespoons of sugar"
-    ]
+    ],
+    "video": "Y3PwcuVvKtE"
   },
   {
     "name": "Cappuccino",
@@ -672,6 +649,38 @@
       "Brew 3oz of espresso for 40 seconds max onto a 5oz tasse",
       "Pour espresso onto cappuccino mug"
     ]
+  },
+  {
+    "name": "Cà Phê Sữa Đá",
+    "aka": [
+      "Cà phê đá",
+      "Cafe da"
+    ],
+    "country": "vietnam",
+    "temperature": "cold",
+    "speed": 4,
+    "glassType": "tumbler",
+    "order": [
+      "condensed-milk",
+      "coffee",
+      "milk",
+      "foam"
+    ],
+    "foamType": "low",
+    "coffeeOz": 6,
+    "milkOz": 1,
+    "condensedMilkOz": 1,
+    "ice": true,
+    "steps": [
+      "Add 1oz of condensed milk to a tumbler glass",
+      "Get the darkest coffee you have",
+      "Grind your coffee finer than usual",
+      "Slow brew 6oz of espresso (3 espresso doppi during 20-35 seconds each)",
+      "Stir the coffee with the condensed milk",
+      "Add some ice",
+      "Froth 1oz of cold milk until foamy and add on top"
+    ],
+    "video": "fuGQ-ebKbac"
   },
   {
     "name": "Latte Macchiato",
