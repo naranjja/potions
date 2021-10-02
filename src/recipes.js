@@ -64,6 +64,7 @@ const parsedRecipes = recipes.map(x => {
         "simple-syrup": x.order.includes("simple-syrup"),
         foam: foamTypeMap[x.foamType],
         ice: Boolean(x.ice),
+        sugar: Boolean(x.sugar),
         order: x.order,
     }
 });

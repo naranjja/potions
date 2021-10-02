@@ -93,12 +93,18 @@ export default function CoffeeCup (props) {
                   <img alt="ice" src={`${process.env.PUBLIC_URL}/ice.png`} />
                 </div>
               }
+
+              { props.sugar && 
+                <div className="sugar">
+                  <img alt="sugar" src={`${process.env.PUBLIC_URL}/sugar.png`} />
+                </div>
+              }
               
               { generateCupContent(props) }
             </div>
           </div>
         </div>
-        <Modal backdrop={true} show={showModal} onHide={handleCloseModal}>
+        <Modal size="lg" backdrop={true} show={showModal} onHide={handleCloseModal}>
           <Modal.Header closeButton>
             <Modal.Title style={{ fontWeight: "bold" }}>{getFlag(props.country)}{ props.name }</Modal.Title>
           </Modal.Header>

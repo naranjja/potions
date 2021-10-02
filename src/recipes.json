@@ -49,6 +49,24 @@
     "video": "PoZTOzFsORI"
   },
   {
+    "name": "Cubano",
+    "country": "cuba",
+    "temperature": "hot",
+    "speed": 1,
+    "glassType": "demitasse",
+    "order": [
+      "coffee",
+      "crema"
+    ],
+    "coffeeOz": 2,
+    "sugar": true,
+    "steps": [
+      "Mix coffee with brown sugar to yield 2oz of espresso",
+      "Brew coffee and brown sugar mixture during 18-25 seconds"
+    ],
+    "video": "sV0CwoPOYL8"
+  },
+  {
     "name": "Espressino",
     "country": "italy",
     "temperature": "hot",
@@ -146,7 +164,8 @@
       "Brew 1oz of espresso during 15 seconds",
       "Mix coffee with 1oz of cold milk and simple syrup",
       "Pour mixture over demitasse with ice cubes on it"
-    ]
+    ],
+    "video": "cSlMxoHb5cQ"
   },
   {
     "name": "Café Bombón",
@@ -155,16 +174,22 @@
     "speed": 2,
     "glassType": "demitasse",
     "order": [
+      "condensed-milk",
       "coffee",
       "crema",
-      "condensed-milk"
+      "foam"
     ],
     "coffeeOz": 1,
     "condensedMilkOz": 1,
+    "milkOz": 1,
     "steps": [
+      "Add 1oz of condensed milk on a demitasse",
       "Brew 1oz of espresso during 15 seconds",
-      "Add 1oz of condensed milk on top"
-    ]
+      "Add coffee to demitasse",
+      "Froth 1oz of cold milk until foamy",
+      "Add foam on top of drink"
+    ],
+    "video": "_udTGPZcuoY"
   },
   {
     "name": "Raf",
@@ -179,11 +204,13 @@
     ],
     "coffeeOz": 1,
     "creamOz": 1,
+    "sugar": true,
     "steps": [
       "Brew 1oz of espresso during 15 seconds",
       "Add 1.5 tablespoons of vanilla sugar to coffee",
       "Top drink with 1oz of cream"
-    ]
+    ],
+    "video": "ZaGy4BD8wGI"
   },
   {
     "name": "Breve",
@@ -204,7 +231,8 @@
       "Brew 2oz of espresso during 18-25 seconds",
       "Froth 2oz of cold half and half until foamy",
       "Add frothed half and half on top of coffee"
-    ]
+    ],
+    "video": "1unzF7p1kPk"
   },
   {
     "name": "Cortado",
@@ -228,27 +256,32 @@
       "Brew 2oz of espresso during 18-25 seconds",
       "Froth 2oz of cold milk until silky and microfoam is present",
       "Add frothed milk on top of coffee"
-    ]
+    ],
+    "video": "VPL9JkZkAR0"
   },
   {
     "name": "Cortadito",
-    "country": "spain",
+    "country": "cuba",
     "temperature": "hot",
     "speed": 1,
     "glassType": "tasse 5oz",
     "order": [
       "coffee",
       "crema",
-      "milk"
+      "milk",
+      "foam"
     ],
+    "foamType": "very low",
     "milkOz": 2,
     "coffeeOz": 2,
+    "sugar": true,
     "steps": [
-      "Brew 2oz of espresso during 18-25 seconds",
-      "Froth 2oz of cold milk until warm but no foam is present",
-      "Remove any foam with a spoon",
-      "Add frothed milk to coffee"
-    ]
+      "Mix coffee with brown sugar (cubano) to yield 2oz of espresso",
+      "Brew coffee and brown sugar mixture during 18-25 seconds",
+      "Froth 2oz of cold milk until warm and microfoam is present",
+      "Add a little frothed milk to coffee, thin layer of foam"
+    ],
+    "video": "QmzCcboPWfQ"
   },
   {
     "name": "Macchiato",
@@ -273,7 +306,8 @@
       "Brew 2oz of espresso during 18-25 seconds",
       "Froth 1oz of cold milk until silky and microfoam is present",
       "Stain coffee with frothed milk, pouring over a small area"
-    ]
+    ],
+    "video": "pPxWxY7kXG4"
   },
   {
     "name": "Lungo",
@@ -289,7 +323,8 @@
     "steps": [
       "Grind your coffee coarser than usual",
       "Brew 3oz of espresso during 40 seconds max"
-    ]
+    ],
+    "video": "nk6yxFk53R4"
   },
   {
     "name": "Flat White",
@@ -310,7 +345,8 @@
       "Brew 2oz of espresso during 18-25 seconds",
       "Froth 3oz of cold milk until as silky as possible and a thin layer of microfoam is present",
       "Add frothed milk on top of coffee"
-    ]
+    ],
+    "video": "6CjYrGEeCRs"
   },
   {
     "name": "Americano",
@@ -327,7 +363,8 @@
     "steps": [
       "Brew 2oz of espresso during 18-25 seconds",
       "Add 4oz of hot water to coffee"
-    ]
+    ],
+    "video": "XQ3TcpI2Lu8"
   },
   {
     "name": "Long Black",
@@ -386,6 +423,7 @@
     ],
     "coffeeOz": 2,
     "milkOz": 3,
+    "sugar": true,
     "steps": [
       "Brew 2oz of espresso during 18-25 seconds on a demitasse",
       "Stir in 3oz of warm milk",
@@ -670,6 +708,7 @@
     "instantCoffeeOz": 2,
     "milkOz": 5.5,
     "ice": true,
+    "sugar": true,
     "steps": [
       "Blend 2oz of instant coffee and 0.5oz of sugar with 5.5oz milk",
       "Pour mixture onto a tumbler glass with ice cubes",
