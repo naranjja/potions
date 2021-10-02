@@ -1,5 +1,5 @@
-const recipes = require("./recipes.json");
-const { toTitleCase } = require("./utils");
+import recipes from "../data/recipes.json";
+import { toTitleCase } from "./utils";
 
 const glassTypeMap = {
     demitasse: {
@@ -109,7 +109,7 @@ speeds.unshift({
     label: "All"
 });
 
-module.exports = { 
+export { 
     parsedRecipes,
     countries,
     glassTypes,

@@ -1,7 +1,7 @@
 import "./CoffeeCup.css";
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
-import { toCamelCase, getFlag } from "../utils";
+import { toCamelCase, getFlag } from "../lib/utils";
 
 function generateCupContent (props) {
   const order = props.order.slice(0).reverse();

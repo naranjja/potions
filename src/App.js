@@ -4,8 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 import Select from 'react-select'
 import { CoffeeCup } from "./components";
-import { parsedRecipes, countries, glassTypes, temperatures, speeds } from "./recipes";
-import { getFlag } from "./utils";
+import { parsedRecipes, countries, glassTypes, temperatures, speeds } from "./lib/recipeParser";
+import { getFlag } from "./lib/utils";
 
 function makespeedScale (speed) {
   return <div>
