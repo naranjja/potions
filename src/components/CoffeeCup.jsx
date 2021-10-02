@@ -113,16 +113,18 @@ export default function CoffeeCup (props) {
           </Modal.Header>
           <Modal.Body className="modal-body">
             <ul>{ props.steps?.map((x, i) => (<li key={i.toString()}>{x}</li>)) }</ul>
-            <iframe
-              className="modal-video"
-              width="853"
-              height="400"
-              src={`https://www.youtube.com/embed/${props.video}`}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              title="Embedded youtube"
-            />
+            { props.video && 
+              <iframe
+                className="modal-video"
+                width="853"
+                height="400"
+                src={`https://www.youtube.com/embed/${props.video}`}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                title="Embedded youtube"
+              />
+            }
           </Modal.Body>
         </Modal>
       </div>

@@ -214,7 +214,7 @@
     "video": "ZaGy4BD8wGI"
   },
   {
-    "name": "Breve",
+    "name": "Caffè Breve",
     "country": "italy",
     "temperature": "hot",
     "speed": 3,
@@ -395,15 +395,18 @@
     "glassType": "7oz tasse",
     "order": [
       "coffee",
-      "milk"
+      "milk",
+      "foam"
     ],
     "coffeeOz": 2,
     "milkOz": 3,
+    "foamType": "very low",
     "sugar": true,
     "steps": [
       "Brew 2oz of espresso during 18-25 seconds on a demitasse",
-      "Stir in 3oz of warm milk",
-      "Add 2 tablespoons of sugar"
+      "Froth 3oz of cold milk until warm and foamy",
+      "Add milk to coffee",
+      "Stir in 2 tablespoons of sugar"
     ],
     "video": "Y3PwcuVvKtE"
   },
@@ -429,7 +432,8 @@
       "Pour frothed milk from the long side, in the center of the cup",
       "Make sure to have foam at the top",
       "Add cocoa powder on top"
-    ]
+    ],
+    "video": "gvPetTPFsZM"
   },
   {
     "name": "Caffè Latte",
@@ -452,7 +456,8 @@
       "Pour frother milk from the beak, in 2 steps",
       "First, add from a higher distance and mix in milk with the stream",
       "Second, add from a lower distance and cut the milk forward"
-    ]
+    ],
+    "video": "UxwscVIZ8Qg"
   },
   {
     "name": "Café au Lait",
@@ -475,7 +480,8 @@
       "Reserve the foam before mixing with coffee",
       "Add frothed milk to coffee",
       "Add foam on top"
-    ]
+    ],
+    "video": "pr7xA80xpYY"
   },
   {
     "name": "Matcha Latte",
@@ -496,7 +502,8 @@
       "Pour 2oz of water on mug and stir until matcha dissolves",
       "Froth 4oz of cold milk until silky and microfoam is present",
       "Add frothed milk on top of matcha"
-    ]
+    ],
+    "video": "DbgI7MdCqnU"
   },
   {
     "name": "Chai Latte",
@@ -517,7 +524,8 @@
       "Pour tea onto a cappuccino mug",
       "Froth 4oz of cold milk until silky and microfoam is present",
       "Add frothed milk on top of tea"
-    ]
+    ],
+    "video": "Agx9Cx03HQ8"
   },
   {
     "name": "Dirty Chai",
@@ -542,7 +550,8 @@
       "Pour coffee onto mug and mix",
       "Froth 3oz of cold milk until silky and microfoam is present",
       "Add frothed milk on top of mug"
-    ]
+    ],
+    "video": "h8_eJdd1PkA"
   },
   {
     "name": "Mocha",
@@ -568,7 +577,8 @@
       "Froth 2oz of cold milk until silky and microfoam is present",
       "Add frothed milk on top",
       "Add whipped cream with cocoa powder sprinkles to top off drink"
-    ]
+    ],
+    "video": "aEHBmi1927g"
   },
   {
     "name": "Red Eye",
@@ -588,7 +598,8 @@
       "Pour coffee onto a cappuccino mug",
       "Brew 1oz of espresso during 15 seconds onto a demitasse",
       "Pour espresso onto cappuccino mug"
-    ]
+    ],
+    "video": "5uVlDScG25o"
   },
   {
     "name": "Black Eye",
@@ -608,10 +619,15 @@
       "Pour coffee onto a cappuccino mug",
       "Brew 2oz of espresso during 18-25 seconds onto a demitasse",
       "Pour espresso onto cappuccino mug"
-    ]
+    ],
+    "video": "dR19cMaYV_I"
   },
   {
     "name": "Dead Eye",
+    "aka": [
+      "Dead Shot",
+      "Triple Red Eye"
+    ],
     "country": "united states",
     "temperature": "hot",
     "speed": 5,
@@ -702,7 +718,8 @@
       "Let the milk sit, so that the foam separates from the milk",
       "Brew 2oz of espresso during 18-25 seconds onto a demitasse",
       "Stain milk with espresso, pouring over a small area, slowly"
-    ]
+    ],
+    "video": "dnGTNh3aDLQ"
   },
   {
     "name": "Frappé",
@@ -722,6 +739,7 @@
       "Blend 2oz of instant coffee and 0.5oz of sugar with 5.5oz milk",
       "Pour mixture onto a tumbler glass with ice cubes",
       "Add whipped cream with cocoa powder sprinkles to top off drink"
-    ]
+    ],
+    "video": "k9seO_dypYw"
   }
 ]
