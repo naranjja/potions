@@ -54,17 +54,29 @@ const parsedRecipes = recipes.map(x => {
         chai: x.chaiOz / capacityOz,
         "dripped-coffee": x.drippedCoffeeOz / capacityOz,
         "decaf-dripped-coffee": x.decafDrippedCoffeeOz / capacityOz,
-        "fine-ground-coffee": x.fineGroundCoffeeOz / capacityOz,
         "condensed-milk": x.condensedMilkOz / capacityOz,
         "cream": x.creamOz / capacityOz,
         "hot-chocolate": x.hotChocolateOz / capacityOz,
         "instant-coffee": x.instantCoffeeOz / capacityOz,
         "half-and-half": x.halfAndHalfOz / capacityOz,
+        beer: x.beerOz / capacityOz,
+        brandy: x.brandyOz / capacityOz,
+        "heavy-cream": x.heavyCreamOz / capacityOz,
+        "lemon-juice": x.lemonJuiceOz / capacityOz,
+        amaretto: x.amarettoOz / capacityOz,
+        whiskey: x.whiskeyOz / capacityOz,
+        "grapefruit-juice": x.grapefruitJuiceOz / capacityOz,
+        tequila: x.tequilaOz / capacityOz,
+        "tonic-water": x.tonicWaterOz / capacityOz,
         crema: x.order.includes("crema"),
         "simple-syrup": x.order.includes("simple-syrup"),
+        "lemon-syrup": x.order.includes("lemon-syrup"),
+        caramel: x.order.includes("caramel"),
         foam: foamTypeMap[x.foamType],
         ice: Boolean(x.ice),
         sugar: Boolean(x.sugar),
+        lemon: Boolean(x.lemon),
+        iceCream: Boolean(x.iceCream),
         order: x.order,
     }
 });
@@ -79,14 +91,13 @@ let temperatures = [...new Set(parsedRecipes.map(x => x.temperature))];
 temperatures = temperatures.map(x => ({ value: x, label: toTitleCase(x) }));
 
 const speedMap = {
-    1: "Super quick",
-    2: "Quick",
-    3: "Regular",
-    4: "Kind of long",
-    5: "Long",
+    1: "Quick",
+    2: "Normal",
+    3: "Long",
 }
 
 let speeds = [...new Set(parsedRecipes.map(x => x.speed))];
+speeds = speeds.sort();
 speeds = speeds.map(x => ({ value: x, label: speedMap[x] }));
 
 countries.unshift({

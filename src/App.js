@@ -220,7 +220,7 @@ function App() {
           )) }
         </Row>
       </Container>
-      <Footer text="Made with ❤️ by Jose Naranjo" />
+      <Footer text="Made with lots of ☕ by Jose Naranjo" />
     </div>
   );
 }

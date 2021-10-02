@@ -8,8 +8,11 @@ function generateCupContent (props) {
   return order.map((x, i) => {
     const heightPercent = props[x];
     let heightPixels = heightPercent * props.height;
-    if (x === "crema" || x === "simple-syrup") {
+    if (x === "crema" || x === "caramel") {
       heightPixels = 20;
+    }
+    if (x === "simple-syrup" || x === "lemon-syrup") {
+      heightPixels = 60;
     }
     if (isNaN(heightPixels)) {
       console.error(`Invalid height for ${x} in ${props.name}`);
@@ -24,6 +27,9 @@ function generateCupContent (props) {
         case "cream":
         case "water":
         case "half-and-half":
+        case "beer":
+        case "heavy-cream":
+        case "lemon-syrup":
           return "black";
         default:
           return "white";
@@ -38,6 +44,8 @@ function generateCupContent (props) {
         case "foam":
         case "crema":
         case "simple-syrup":
+        case "lemon-syrup":
+        case "caramel":
           return "";
         default:
           return `${props[toCamelCase(x) + "Oz"]} `;
@@ -100,6 +108,18 @@ export default function CoffeeCup (props) {
               { props.sugar && 
                 <div className="sugar">
                   <img alt="sugar" src={`${process.env.PUBLIC_URL}/sugar.png`} />
+                </div>
+              }
+
+              { props.lemon && 
+                <div className="lemon">
+                  <img alt="lemon" src={`${process.env.PUBLIC_URL}/lemon.png`} />
+                </div>
+              }
+
+              { props.iceCream && 
+                <div className="iceCream">
+                  <img alt="ice-cream" src={`${process.env.PUBLIC_URL}/iceCream.png`} />
                 </div>
               }
               

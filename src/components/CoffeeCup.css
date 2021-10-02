@@ -30,6 +30,14 @@
     background-color: rgb(109, 87, 16);
 }
 
+.lemon-syrup-quantity {
+    background-color: rgb(227, 207, 98);
+}
+
+.caramel-quantity {
+    background-color: rgb(158, 107, 40);
+}
+
 .coffee-quantity {
     background-color: rgb(56, 44, 32);
 }
@@ -58,10 +66,6 @@
     background-color: rgb(61, 55, 53);
 }
 
-.fine-ground-coffee-quantity {
-    background-color: rgb(61, 55, 53);
-}
-
 .condensed-milk-quantity {
     background-color: rgb(248, 213, 170);
 }
@@ -82,22 +86,49 @@
     background-color: rgb(247, 237, 213);
 }
 
-.ice > img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    opacity: 0.2;
+.beer-quantity {
+    background-color: rgb(251, 173, 61);
 }
 
-.sugar > img {
+.brandy-quantity {
+    background-color: rgb(106, 35, 10);
+}
+
+.heavy-cream-quantity {
+    background-color: rgb(240, 235, 224);
+}
+
+.lemon-juice-quantity {
+    background-color: rgb(203, 169, 53);
+}
+
+.amaretto-quantity {
+    background-color: rgb(179, 60, 37);
+}
+
+.whiskey-quantity {
+    background-color: rgb(183, 92, 16);
+}
+
+.grapefruit-juice-quantity {
+    background-color: rgb(242, 91, 46);
+}
+
+.tequila-quantity {
+    background-color: rgb(163, 151, 92);
+}
+
+.tonic-water-quantity {
+    background-color: rgb(165, 161, 151);
+}
+
+.ice > img, .sugar > img, .lemon > img, .iceCream > img {
     width: 100%;
     height: auto;
     position: absolute;
     bottom: 0;
     left: 0;
-    opacity: 0.2;
+    opacity: 0.4;
 }
 
 .modal-body, .modal-body * {
