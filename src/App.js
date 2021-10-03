@@ -64,6 +64,7 @@ function App() {
                 Temperature
               </Form.Label>
               <Select 
+                isSearchable={false}
                 menuPortalTarget={document.body} 
                 styles={{ 
                   control: base => ({...base, padding: 5}), 
@@ -95,6 +96,7 @@ function App() {
                 Speed
               </Form.Label>
               <Select 
+                isSearchable={false}
                 menuPortalTarget={document.body} 
                 styles={{ 
                   control: base => ({...base, padding: 5}), 
@@ -126,6 +128,7 @@ function App() {
                 Country
               </Form.Label>
               <Select 
+                isSearchable={false}
                 menuPortalTarget={document.body} 
                 styles={{ 
                   control: base => ({...base, padding: 5}), 
@@ -157,6 +160,7 @@ function App() {
                 Glass type
               </Form.Label>
               <Select 
+                isSearchable={false}
                 menuPortalTarget={document.body} 
                 styles={{ 
                   control: base => ({...base, padding: 5}), 

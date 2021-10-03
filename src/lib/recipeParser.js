@@ -16,13 +16,13 @@ const glassTypeMap = {
     },
     "7oz tasse": {
         capacityOz: 7,
-        width: 350,
+        width: 340,
         height: 400,
         radius: 100,
     },
     "8oz cappuccino mug": {
         capacityOz: 8,
-        width: 350,
+        width: 340,
         height: 256,
         radius: 64,
     },
