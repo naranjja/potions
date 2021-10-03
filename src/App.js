@@ -12,7 +12,7 @@ import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { CoffeeCup, Footer } from "./components";
-import { parsedRecipes, countries, glassTypes, temperatures, speeds } from "./lib/recipeParser";
+import { parsedRecipes, countries, glassTypes, temperatures, speeds, names } from "./lib/recipeParser";
 import { getTemperatureIcon, getFlag, makespeedScale } from "./lib/utils";
 
 const TemperatureOption = (props) => (
@@ -46,6 +46,7 @@ function App() {
   const [glassType, setGlassType] = useState(null);
   const [temperature, setTemperature] = useState(null);
   const [speed, setSpeed] = useState(null);
+  const [name, setName] = useState(null);
 
   return (
     <div className="App">
@@ -58,6 +59,42 @@ function App() {
         </div>
         <Form className="filters">
           <Row>
+            <Form.Group as={Col} xs={12} md={12}>
+              <Form.Label>
+                <FontAwesomeIcon className="filter-label-icon" icon="search" />
+                Search
+              </Form.Label>
+              <Select 
+                isSearchable={true}
+                menuPortalTarget={document.body} 
+                components={{
+                  DropdownIndicator: () => null,
+                  IndicatorSeparator:() => null,
+                }}
+                styles={{ 
+                  control: base => ({...base, padding: 5}), 
+                  menuPortal: base => ({ ...base, zIndex: 9999 }) 
+                }}
+                options={names} 
+                value={name}
+                onChange={s => {
+                  setTemperature(null);
+                  setSpeed(null);
+                  setCountry(null);
+                  setGlassType(null);
+                  setName(null);
+                  const recipesCopy = parsedRecipes.slice(0);
+                  if (s.value === "all") {
+                    s = null;
+                  }
+                  setName(s);
+                  const newRecipes = recipesCopy.filter(x => {
+                    return s ? x.name === s.value : 1
+                  });
+                  setRecipes(newRecipes);
+                }}
+              />
+            </Form.Group>
             <Form.Group as={Col} xs={12} lg={3}>
               <Form.Label>
                 <FontAwesomeIcon className="filter-label-icon" icon="thermometer-half" />
@@ -85,6 +122,7 @@ function App() {
                       && (glassType ? x.glassType === glassType.value : 1)
                       && (s ? x.temperature === s.value : 1)
                       && (speed ? x.speed === speed.value : 1)
+                      && (name ? x.name === name.value : 1)
                   });
                   setRecipes(newRecipes);
                 }}
@@ -117,6 +155,7 @@ function App() {
                       && (glassType ? x.glassType === glassType.value : 1)
                       && (temperature ? x.temperature === temperature.value : 1)
                       && (s ? x.speed === s.value : 1)
+                      && (name ? x.name === name.value : 1)
                   });
                   setRecipes(newRecipes);
                 }}
@@ -149,6 +188,7 @@ function App() {
                       && (glassType ? x.glassType === glassType.value : 1)
                       && (temperature ? x.temperature === temperature.value : 1)
                       && (speed ? x.speed === speed.value : 1)
+                      && (name ? x.name === name.value : 1)
                   });
                   setRecipes(newRecipes);
                 }}
@@ -180,6 +220,7 @@ function App() {
                       && (s ? x.glassType === s.value : 1)
                       && (temperature ? x.temperature === temperature.value : 1)
                       && (speed ? x.speed === speed.value : 1)
+                      && (name ? x.name === name.value : 1)
                   });
                   setRecipes(newRecipes);
                 }}
@@ -192,11 +233,12 @@ function App() {
                   setSpeed(null);
                   setCountry(null);
                   setGlassType(null);
+                  setName(null);
                   const recipesCopy = parsedRecipes.slice(0);
                   setRecipes(recipesCopy);
                 }}>
                   <FontAwesomeIcon className="filter-label-icon" icon="trash-alt" />
-                  Reset filters
+                  Reset
                 </Button>
               </div>
             </Form.Group>

@@ -4,9 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faThermometerHalf, faClock, faGlobeAmericas, faGlassWhiskey, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
+import { faThermometerHalf, faClock, faGlobeAmericas, faGlassWhiskey, faTrashAlt, faSearch } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faThermometerHalf, faClock, faGlobeAmericas, faGlassWhiskey, faTrashAlt);
+library.add(faThermometerHalf, faClock, faGlobeAmericas, faGlassWhiskey, faTrashAlt, faSearch);
 
 ReactDOM.render(
   <React.StrictMode>

@@ -32,7 +32,7 @@
 
 * {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .App {
@@ -82,13 +82,13 @@
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-size: 120px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .subtitle {
   font-family: 'Fira Sans', sans-serif;
   font-size: 25px;
-  font-weight: 200;
+  font-weight: 300;
   margin-bottom: 25px;
 }
 
@@ -97,7 +97,10 @@
 }
 .filters > .row > div {
   margin-top: 30px;
-  font-weight: bold;
+}
+
+.filters .form-label {
+  font-weight: 300;
 }
 
 .filter-label-icon {
@@ -132,10 +135,13 @@
 
 .coffee-name, .coffee-glass-type {
   font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 nav.navbar, nav.navbar * {
   font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
   font-size: 15px;
   height: 30px;
   width: 100%;
