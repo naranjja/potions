@@ -100,8 +100,8 @@ let speeds = [...new Set(parsedRecipes.map(x => x.speed))];
 speeds = speeds.sort();
 speeds = speeds.map(x => ({ value: x, label: speedMap[x] }));
 
-let names = [...new Set(parsedRecipes.map(x => x.name))];
-names = names.map(x => ({ value: x, label: toTitleCase(x) }));
+let parsedNames = parsedRecipes.map(x => x.name);
+parsedNames = parsedNames.map(x => ({ value: x, label: x }));
 
 countries.unshift({
     value: "all",
@@ -123,16 +123,11 @@ speeds.unshift({
     label: "All"
 });
 
-names.unshift({
-    value: "all",
-    label: "All"
-});
-
 export { 
     parsedRecipes,
+    parsedNames,
     countries,
     glassTypes,
     temperatures,
     speeds,
-    names,
 };

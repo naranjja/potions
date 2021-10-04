@@ -12,7 +12,7 @@ import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { CoffeeCup, Footer } from "./components";
-import { parsedRecipes, countries, glassTypes, temperatures, speeds, names } from "./lib/recipeParser";
+import { parsedRecipes, parsedNames, countries, glassTypes, temperatures, speeds } from "./lib/recipeParser";
 import { getTemperatureIcon, getFlag, makespeedScale } from "./lib/utils";
 
 const TemperatureOption = (props) => (
@@ -42,6 +42,7 @@ const CountryOption = (props) => (
 function App() {
   
   const [recipes, setRecipes] = useState(parsedRecipes);
+  const [names, setNames] = useState(parsedNames);
   const [country, setCountry] = useState(null);
   const [glassType, setGlassType] = useState(null);
   const [temperature, setTemperature] = useState(null);
@@ -52,49 +53,13 @@ function App() {
     <div className="App">
       <Container className="main-container">
         <div className="title">
-          Kuofe
+          Coffee Book
         </div>
         <div className="subtitle">
-          A simplified collection of coffee recipes I made out of boredom.
+          A simplified and personal collection of { Math.floor(parsedRecipes.length / 10) * 10 }+ coffee recipes I made out of boredom.
         </div>
         <Form className="filters">
           <Row>
-            <Form.Group as={Col} xs={12} md={12}>
-              <Form.Label>
-                <FontAwesomeIcon className="filter-label-icon" icon="search" />
-                Search
-              </Form.Label>
-              <Select 
-                isSearchable={true}
-                menuPortalTarget={document.body} 
-                components={{
-                  DropdownIndicator: () => null,
-                  IndicatorSeparator:() => null,
-                }}
-                styles={{ 
-                  control: base => ({...base, padding: 5}), 
-                  menuPortal: base => ({ ...base, zIndex: 9999 }) 
-                }}
-                options={names} 
-                value={name}
-                onChange={s => {
-                  setTemperature(null);
-                  setSpeed(null);
-                  setCountry(null);
-                  setGlassType(null);
-                  setName(null);
-                  const recipesCopy = parsedRecipes.slice(0);
-                  if (s.value === "all") {
-                    s = null;
-                  }
-                  setName(s);
-                  const newRecipes = recipesCopy.filter(x => {
-                    return s ? x.name === s.value : 1
-                  });
-                  setRecipes(newRecipes);
-                }}
-              />
-            </Form.Group>
             <Form.Group as={Col} xs={12} lg={3}>
               <Form.Label>
                 <FontAwesomeIcon className="filter-label-icon" icon="thermometer-half" />
@@ -122,9 +87,10 @@ function App() {
                       && (glassType ? x.glassType === glassType.value : 1)
                       && (s ? x.temperature === s.value : 1)
                       && (speed ? x.speed === speed.value : 1)
-                      && (name ? x.name === name.value : 1)
                   });
                   setRecipes(newRecipes);
+                  setName(null);
+                  setNames(newRecipes.map(x => ({ value: x.name, label: x.name })));
                 }}
               />
             </Form.Group>
@@ -155,9 +121,10 @@ function App() {
                       && (glassType ? x.glassType === glassType.value : 1)
                       && (temperature ? x.temperature === temperature.value : 1)
                       && (s ? x.speed === s.value : 1)
-                      && (name ? x.name === name.value : 1)
                   });
                   setRecipes(newRecipes);
+                  setName(null);
+                  setNames(newRecipes.map(x => ({ value: x.name, label: x.name })));
                 }}
               />
             </Form.Group>
@@ -188,9 +155,10 @@ function App() {
                       && (glassType ? x.glassType === glassType.value : 1)
                       && (temperature ? x.temperature === temperature.value : 1)
                       && (speed ? x.speed === speed.value : 1)
-                      && (name ? x.name === name.value : 1)
                   });
                   setRecipes(newRecipes);
+                  setName(null);
+                  setNames(newRecipes.map(x => ({ value: x.name, label: x.name })));
                 }}
               />
             </Form.Group>
@@ -220,51 +188,88 @@ function App() {
                       && (s ? x.glassType === s.value : 1)
                       && (temperature ? x.temperature === temperature.value : 1)
                       && (speed ? x.speed === speed.value : 1)
-                      && (name ? x.name === name.value : 1)
+                  });
+                  setRecipes(newRecipes);
+                  setName(null);
+                  setNames(newRecipes.map(x => ({ value: x.name, label: x.name })));
+                }}
+              />
+            </Form.Group>
+            <Form.Group as={Col} xs={12} md={12}>
+              <Form.Label style={{ width: "100%", textAlign: "left" }}>
+                <FontAwesomeIcon className="filter-label-icon" icon="search" />
+                Search
+              </Form.Label>
+              <Select 
+                placeholder="Search for a specific recipe..."
+                isSearchable={true}
+                menuPortalTarget={document.body} 
+                components={{
+                  DropdownIndicator: () => null,
+                  IndicatorSeparator:() => null,
+                }}
+                styles={{ 
+                  control: base => ({...base, padding: 5, textAlign: "left"}), 
+                  menuPortal: base => ({ ...base, zIndex: 9999 }) 
+                }}
+                options={names} 
+                value={name}
+                onChange={s => {
+                  setName(s);
+                  const recipesCopy = parsedRecipes.slice(0);
+                  const newRecipes = recipesCopy.filter(x => {
+                    return s ? x.name === s.value : 1
                   });
                   setRecipes(newRecipes);
                 }}
               />
             </Form.Group>
             <Form.Group as={Col} xs={12} md={12}>
-              <div className="d-grid">
-                <Button variant="secondary" size="lg" onClick={() => {
-                  setTemperature(null);
-                  setSpeed(null);
-                  setCountry(null);
-                  setGlassType(null);
-                  setName(null);
-                  const recipesCopy = parsedRecipes.slice(0);
-                  setRecipes(recipesCopy);
-                }}>
-                  <FontAwesomeIcon className="filter-label-icon" icon="trash-alt" />
-                  Reset
-                </Button>
-              </div>
-            </Form.Group>
+                <div className="d-grid">
+                  <Button variant="secondary" size="lg" onClick={() => {
+                    setTemperature(null);
+                    setSpeed(null);
+                    setCountry(null);
+                    setGlassType(null);
+                    setName(null);
+                    const recipesCopy = parsedRecipes.slice(0);
+                    const namesCopy = parsedNames.slice(0);
+                    setRecipes(recipesCopy);
+                    setNames(namesCopy);
+                  }}>
+                    <FontAwesomeIcon className="filter-label-icon" icon="trash-alt" />
+                    Reset
+                  </Button>
+                </div>
+              </Form.Group>
           </Row>
         </Form>
 
-        <Row xs={1} md={2} xl={3} className="g-3">
-          { recipes.map((x, i) => (
-            <Col key={ i.toString() }>
-              <Card>
-                <CoffeeCup {...x} />
-                <div className="coffee-description">
-                  { makespeedScale(x.speed) }
-                  { getFlag(x.country) }
-                  <span className="coffee-name">
-                    {x.name}
-                  </span>
-                  <br></br>
-                  <span className="coffee-glass-type">
-                    ({ x.glassType })
-                  </span>
-                </div>
-              </Card>
-            </Col>
-          )) }
-        </Row>
+        { recipes.length > 0 ? (
+          <Row xs={1} md={2} xl={3} className="g-3">
+            { recipes.map((x, i) => (
+              <Col key={ i.toString() }>
+                <Card>
+                  <CoffeeCup {...x} />
+                  <div className="coffee-description">
+                    { makespeedScale(x.speed) }
+                    { getFlag(x.country) }
+                    <span className="coffee-name">
+                      {x.name}
+                    </span>
+                    <br></br>
+                    <span className="coffee-glass-type">
+                      ({ x.glassType })
+                    </span>
+                  </div>
+                </Card>
+              </Col>
+            )) }
+          </Row>
+        ) : (
+          <span>😥 No recipes that match those filters (yet!)</span>
+        ) }
+
       </Container>
       <Footer text="Made with lots of ☕ by Jose Naranjo" />
     </div>

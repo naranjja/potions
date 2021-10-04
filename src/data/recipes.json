@@ -12,7 +12,9 @@
     "coffeeOz": 0.75,
     "steps": [
       "Grind your coffee finer than usual",
-      "Brew 0.75oz of espresso during 15 seconds max"
+      "Brew 0.75oz of espresso during 15 seconds max",
+      "Aim to yield the same weight coffee beans used (1:1)",
+      "For example, 8g of coffee beans should yield 8g of espresso in a 1:1 ratio"
     ],
     "video": "ju73OeM6eiI"
   },
@@ -28,7 +30,9 @@
     ],
     "coffeeOz": 1,
     "steps": [
-      "Brew 1oz of espresso during 15 seconds"
+      "Brew 1oz of espresso during 15 seconds",
+      "Aim to yield twice the weight of coffee beans (1:2 ratio)",
+      "For example, 8g of coffee beans should yield 16g of espresso in a 1:2 ratio"
     ],
     "video": "y0XariiJiHk"
   },
@@ -44,7 +48,9 @@
     ],
     "coffeeOz": 2,
     "steps": [
-      "Brew 2oz of espresso during 18-25 seconds"
+      "Brew 2oz of espresso during 18-25 seconds",
+      "Aim to yield twice the weight of coffee beans (1:2 ratio)",
+      "For example, 17g of coffee beans should yield 34g of espresso in a 1:2 ratio"
     ],
     "video": "PoZTOzFsORI"
   },
@@ -62,7 +68,9 @@
     "sugar": true,
     "steps": [
       "Mix coffee with brown sugar to yield 2oz of espresso",
-      "Brew coffee and brown sugar mixture during 18-25 seconds"
+      "Brew coffee and brown sugar mixture during 18-25 seconds",
+      "Aim to yield twice the weight of coffee beans and brown sugar (1:2 ratio)",
+      "For example, 20g of coffee beans and brown sugar should yield 40g of espresso in a 1:2 ratio"
     ],
     "video": "sV0CwoPOYL8"
   },
@@ -80,7 +88,7 @@
     "coffeeOz": 2,
     "heavyCreamOz": 0.5,
     "steps": [
-      "Brew 2oz of espresso during 18-25 seconds",
+      "Brew 2oz of espresso during 18-25 seconds (see Espresso Doppio)",
       "Add 0.5oz of heavy cream to balance bitter taste"
     ],
     "video": "3AFkZs8i8ow"
@@ -99,7 +107,7 @@
     "lemonJuiceOz": 1,
     "lemon": true,
     "steps": [
-      "Brew 2oz of espresso during 18-25 seconds",
+      "Brew 2oz of espresso during 18-25 seconds (see Espresso Doppio)",
       "Add 1oz of lemon juice",
       "Add lemon zest on top",
       "Top with a lemon slice"
@@ -122,7 +130,7 @@
     "coffeeOz": 2,
     "brandyOz": 1,
     "steps": [
-      "Brew 2oz of espresso during 18-25 seconds",
+      "Brew 2oz of espresso during 18-25 seconds (see Espresso Doppio)",
       "Add 1oz of brandy (sambuca, grappa, cognac, pisco, etc)"
     ],
     "video": "oIs7tDGJHvs"
@@ -142,7 +150,7 @@
     "amarettoOz": 0.5,
     "halfAndHalfOz": 0.5,
     "steps": [
-      "Brew 2oz of espresso during 18-25 seconds",
+      "Brew 2oz of espresso during 18-25 seconds (see Espresso Doppio)",
       "Add 0.5oz of amaretto",
       "Add 0.5oz of half and half"
     ],
@@ -162,7 +170,7 @@
     "coffeeOz": 1,
     "milkOz": 1,
     "steps": [
-      "Brew 1oz of espresso during 15 seconds",
+      "Brew 1oz of espresso during 15 seconds (see Espresso)",
       "Froth 1oz of cold milk until warm but no foam is present",
       "Remove any foam with a spoon",
       "Add frothed milk to coffee"
@@ -185,7 +193,7 @@
     "milkOz": 1,
     "coffeeOz": 1,
     "steps": [
-      "Brew 1oz of espresso during 15 seconds",
+      "Brew 1oz of espresso during 15 seconds (see Espresso)",
       "Froth 1oz of cold milk until silky and microfoam is present",
       "Add frothed milk on top of coffee"
     ],
@@ -204,7 +212,7 @@
     "coffeeOz": 1,
     "ice": true,
     "steps": [
-      "Brew 1oz of espresso during 15 seconds",
+      "Brew 1oz of espresso during 15 seconds (see Espresso)",
       "Add some ice cubes"
     ],
     "video": "qV3dwWDk04Y"
@@ -222,7 +230,7 @@
     "coffeeOz": 2,
     "ice": true,
     "steps": [
-      "Brew 2oz of espresso during 18-25 seconds",
+      "Brew 2oz of espresso during 18-25 seconds (see Espresso Doppio)",
       "Add some ice cubes"
     ],
     "video": "s-roLnsZ-F4"
@@ -243,7 +251,7 @@
     "milkOz": 1,
     "ice": true,
     "steps": [
-      "Brew 1oz of espresso during 15 seconds",
+      "Brew 1oz of espresso during 15 seconds (see Espresso)",
       "Mix coffee with 1oz of cold milk and 1oz of simple syrup",
       "Pour mixture over demitasse with ice cubes on it"
     ],
@@ -263,7 +271,7 @@
     "ice": true,
     "lemon": true,
     "steps": [
-      "Brew 1oz of espresso during 15 seconds",
+      "Brew 1oz of espresso during 15 seconds (see Espresso)",
       "Add lemon slice"
     ],
     "video": "dl051foNwBQ"
@@ -286,7 +294,7 @@
     "milkOz": 1,
     "steps": [
       "Add 1oz of condensed milk on a demitasse",
-      "Brew 1oz of espresso during 15 seconds",
+      "Brew 1oz of espresso during 15 seconds (see Espresso)",
       "Add coffee to demitasse",
       "Froth 1oz of cold milk until foamy",
       "Add foam on top of drink"
@@ -308,7 +316,7 @@
     "creamOz": 1,
     "sugar": true,
     "steps": [
-      "Brew 1oz of espresso during 15 seconds",
+      "Brew 1oz of espresso during 15 seconds (see Espresso)",
       "Add 1.5 tablespoons of vanilla sugar to coffee",
       "Top drink with 1oz of cream"
     ],
@@ -331,7 +339,7 @@
     "hotChocolateOz": 0.5,
     "steps": [
       "Make 0.5oz of hot chocolate",
-      "Brew 1oz of espresso during 15 seconds",
+      "Brew 1oz of espresso during 15 seconds (see Espresso)",
       "Mix in 1oz of warm milk",
       "Add hot chocolate",
       "Add cocoa powder on top"
@@ -352,7 +360,7 @@
     "iceCream": true,
     "steps": [
       "Add 2 scoops of vanilla ice cream to a 5oz tasse",
-      "Brew 1oz of espresso during 15 seconds",
+      "Brew 1oz of espresso during 15 seconds (see Espresso)",
       "Add coffee on top of ice cream",
       "Add cocoa powder on top"
     ],
@@ -373,7 +381,7 @@
     "steps": [
       "Add 150g of vanilla ice cream to a 5oz tasse",
       "Add 20g of ground chocolate on top",
-      "Brew 4oz of espresso (2 espresso doppi during 20-35 seconds each)",
+      "Brew 4oz of espresso (2 espresso doppios during 20-35 seconds each, see Espresso Doppio)",
       "Add coffee to cup"
     ],
     "video": "xuv1UoEfnqY"
@@ -395,7 +403,7 @@
     "lemon": true,
     "steps": [
       "Add 1 teaspoon of brown sugar to a 5oz tasse",
-      "Brew 3oz of espresso during 40 seconds max",
+      "Brew 3oz of espresso during 40 seconds max (see Lungo)",
       "Add coffee and 1.5oz of lemon juice to cup",
       "Add some ice cubes",
       "Top with a lemon slice"
@@ -418,7 +426,7 @@
     "halfAndHalfOz": 2,
     "coffeeOz": 2,
     "steps": [
-      "Brew 2oz of espresso during 18-25 seconds",
+      "Brew 2oz of espresso during 18-25 seconds (see Espresso Doppio)",
       "Froth 2oz of cold half and half until foamy",
       "Add frothed half and half on top of coffee"
     ],
@@ -443,7 +451,7 @@
     "milkOz": 2,
     "coffeeOz": 2,
     "steps": [
-      "Brew 2oz of espresso during 18-25 seconds",
+      "Brew 2oz of espresso during 18-25 seconds (see Espresso Doppio)",
       "Froth 2oz of cold milk until silky and microfoam is present",
       "Add frothed milk on top of coffee"
     ],
@@ -466,7 +474,7 @@
     "coffeeOz": 2,
     "sugar": true,
     "steps": [
-      "Mix coffee with brown sugar (cubano) to yield 2oz of espresso",
+      "Mix coffee with brown sugar to yield 2oz of espresso (see Cubano)",
       "Brew coffee and brown sugar mixture during 18-25 seconds",
       "Froth 2oz of cold milk until warm and microfoam is present",
       "Add a little frothed milk to coffee, thin layer of foam"
@@ -493,7 +501,7 @@
     "milkOz": 1,
     "coffeeOz": 2,
     "steps": [
-      "Brew 2oz of espresso during 18-25 seconds",
+      "Brew 2oz of espresso during 18-25 seconds (see Espresso Doppio)",
       "Froth 1oz of cold milk until silky and microfoam is present",
       "Stain coffee with frothed milk, pouring over a small area"
     ],
@@ -512,7 +520,9 @@
     "coffeeOz": 3,
     "steps": [
       "Grind your coffee coarser than usual",
-      "Brew 3oz of espresso during 40 seconds max"
+      "Brew 3oz of espresso during 40 seconds max",
+      "Aim to yield thrice the weight of coffee beans (1:3 ratio)",
+      "For example, 17g of coffee beans should yield 51g of espresso in a 1:3 ratio"
     ],
     "video": "nk6yxFk53R4"
   },
@@ -529,7 +539,9 @@
     "coffeeOz": 4,
     "steps": [
       "Grind your coffee much coarser than usual",
-      "Brew 4oz of espresso during 40 seconds max"
+      "Brew 4oz of espresso during 40 seconds max",
+      "Aim to yield thrice the weight of coffee beans (1:3 ratio)",
+      "For example, 17g of coffee beans should yield 51g of espresso in a 1:3 ratio"
     ],
     "video": "kyrhLPH-ejk"
   },
@@ -549,7 +561,7 @@
     "coffeeOz": 2,
     "milkOz": 3,
     "steps": [
-      "Brew 2oz of espresso during 18-25 seconds",
+      "Brew 2oz of espresso during 18-25 seconds (see Espresso Doppio)",
       "Froth 3oz of cold milk until as silky as possible and a thin layer of microfoam is present",
       "Add frothed milk on top of coffee"
     ],
@@ -568,7 +580,7 @@
     "coffeeOz": 2,
     "waterOz": 4,
     "steps": [
-      "Brew 2oz of espresso during 18-25 seconds",
+      "Brew 2oz of espresso during 18-25 seconds (see Espresso Doppio)",
       "Add 4oz of hot water to coffee"
     ],
     "video": "XQ3TcpI2Lu8"
@@ -587,7 +599,7 @@
     "coffeeOz": 2,
     "waterOz": 4,
     "steps": [
-      "Brew 2oz of espresso during 18-25 seconds on a demitasse",
+      "Brew 2oz of espresso during 18-25 seconds on a demitasse (see Espresso Doppio)",
       "Add 4oz of hot water to a 7oz tasse",
       "Pour coffee on hot water, to preserve crema"
     ],
@@ -609,7 +621,7 @@
     "foamType": "very low",
     "sugar": true,
     "steps": [
-      "Brew 2oz of espresso during 18-25 seconds on a demitasse",
+      "Brew 2oz of espresso during 18-25 seconds on a demitasse (see Espresso Doppio)",
       "Froth 3oz of cold milk until warm and foamy",
       "Add milk to coffee",
       "Stir in 2 tablespoons of sugar"
@@ -635,7 +647,7 @@
     "hotChocolateOz": 4,
     "steps": [
       "Make 4oz of hot chocolate",
-      "Brew 2oz of espresso during 18-25 seconds",
+      "Brew 2oz of espresso during 18-25 seconds (see Espresso Doppio)",
       "Add hot chocolate to coffee",
       "Add whipped cream on top with cinammon and orange peel zest"
     ],
@@ -657,7 +669,7 @@
     "coffeeOz": 2,
     "milkOz": 4,
     "steps": [
-      "Brew 2oz of espresso during 18-25 seconds",
+      "Brew 2oz of espresso during 18-25 seconds (see Espresso Doppio)",
       "Froth 4oz of cold milk until silky and foamy",
       "Stir cup to stain the walls with coffee",
       "Pour frothed milk from the long side, in the center of the cup",
@@ -682,7 +694,7 @@
     "coffeeOz": 3,
     "milkOz": 3,
     "steps": [
-      "Brew 3oz of espresso for 40 seconds max",
+      "Brew 3oz of espresso for 40 seconds max (see Lungo)",
       "Froth 3oz of cold milk until foamy and silky",
       "Reserve the foam before mixing with coffee",
       "Add frothed milk to coffee",
@@ -706,7 +718,7 @@
     "coffeeOz": 2,
     "milkOz": 3,
     "steps": [
-      "Brew 2oz of espresso during 18-25 seconds",
+      "Brew 2oz of espresso during 18-25 seconds (see Espresso Doppio)",
       "Froth 3oz of cold milk until silky and microfoam is present",
       "Pour frother milk from the beak, in 2 steps",
       "First, add from a higher distance and mix in milk with the stream",
@@ -729,10 +741,11 @@
     "matchaOz": 2,
     "milkOz": 4,
     "steps": [
-      "Sift 1 teaspoon of matcha into a cappuccino mug",
+      "Sift 2 teaspoons of matcha into a cappuccino mug",
       "Pour 2oz of water on mug and stir until matcha dissolves",
       "Froth 4oz of cold milk until silky and microfoam is present",
-      "Add frothed milk on top of matcha"
+      "Add frothed milk on top of matcha",
+      "Matcha is naturally sweet so no sugar is usually needed"
     ],
     "video": "DbgI7MdCqnU"
   },
@@ -751,10 +764,11 @@
     "chaiOz": 2,
     "milkOz": 4,
     "steps": [
-      "Make 2oz of chai tea using 2oz of water and a 1oz of chai spices/black tea",
+      "Make 2oz of concentrated chai tea using 2oz of water and a 1oz of chai spices/black tea",
       "Pour tea onto a cappuccino mug",
       "Froth 4oz of cold milk until silky and microfoam is present",
-      "Add frothed milk on top of tea"
+      "Add frothed milk on top of tea",
+      "Decorate with some cinnammon powder on top"
     ],
     "video": "Agx9Cx03HQ8"
   },
@@ -777,7 +791,7 @@
     "steps": [
       "Make 2oz of chai tea using 2oz of water and a 1oz of chai spices/black tea",
       "Pour tea onto a cappuccino mug",
-      "Brew 2oz of espresso for 18-25 seconds",
+      "Brew 2oz of espresso for 18-25 seconds (see Espresso Doppio)",
       "Pour coffee onto mug and mix",
       "Froth 3oz of cold milk until silky and microfoam is present",
       "Add frothed milk on top of mug"
@@ -803,7 +817,7 @@
     "steps": [
       "Make 2oz of hot chocolate",
       "Pour chocolate onto a cappuccino mug",
-      "Brew 2oz of espresso for 18-25 seconds",
+      "Brew 2oz of espresso for 18-25 seconds (see Espresso Doppio)",
       "Pour coffee onto mug and mix",
       "Froth 2oz of cold milk until silky and microfoam is present",
       "Add frothed milk on top",
@@ -833,7 +847,7 @@
     "steps": [
       "Make 2oz of hot chocolate",
       "Pour chocolate onto a cappuccino mug",
-      "Brew 2oz of espresso for 18-25 seconds",
+      "Brew 2oz of espresso for 18-25 seconds (see Espresso Doppio)",
       "Pour coffee onto mug and mix",
       "Froth 3oz of cold milk until silky and microfoam is present",
       "Add frothed milk on top",
@@ -857,7 +871,7 @@
     "steps": [
       "Make 4oz of dripped coffee (can use french press or mocha pot as well)",
       "Pour coffee onto a cappuccino mug",
-      "Brew 1oz of espresso during 15 seconds onto a demitasse",
+      "Brew 1oz of espresso during 15 seconds onto a demitasse (see Espresso)",
       "Pour espresso onto cappuccino mug"
     ],
     "video": "5uVlDScG25o"
@@ -878,7 +892,7 @@
     "steps": [
       "Make 4oz of dripped coffee (can use french press or mocha pot as well)",
       "Pour coffee onto a cappuccino mug",
-      "Brew 2oz of espresso during 18-25 seconds onto a demitasse",
+      "Brew 2oz of espresso during 18-25 seconds onto a demitasse (see Espresso Doppio)",
       "Pour espresso onto cappuccino mug"
     ],
     "video": "dR19cMaYV_I"
@@ -903,7 +917,7 @@
     "steps": [
       "Make 4oz of dripped coffee (can use french press or mocha pot as well)",
       "Pour coffee onto a cappuccino mug",
-      "Brew 3oz of espresso for 40 seconds max onto a 5oz tasse",
+      "Brew 3oz of espresso for 40 seconds max onto a 5oz tasse (see Lungo)",
       "Pour espresso onto cappuccino mug"
     ]
   },
@@ -923,7 +937,7 @@
     "steps": [
       "Make 4oz of dripped decaf coffee (can use french press or mocha pot as well)",
       "Pour coffee onto a cappuccino mug",
-      "Brew 3oz of espresso for 40 seconds max onto a 5oz tasse",
+      "Brew 3oz of espresso for 40 seconds max onto a 5oz tasse (see Lungo)",
       "Pour espresso onto cappuccino mug"
     ]
   },
@@ -952,7 +966,7 @@
       "Add 1oz of condensed milk to a tumbler glass",
       "Get the darkest coffee you have",
       "Grind your coffee finer than usual",
-      "Slow brew 6oz of espresso (3 espresso doppi during 20-35 seconds each)",
+      "Slow brew 6oz of espresso (3 espresso doppios during 20-35 seconds each, see Espresso Doppio)",
       "Stir the coffee with the condensed milk",
       "Add some ice",
       "Froth 1oz of cold milk until foamy and add on top"
@@ -976,7 +990,7 @@
     "coffeeOz": 2,
     "milkOz": 4,
     "steps": [
-      "Brew 2oz of espresso for 18-25 seconds",
+      "Brew 2oz of espresso for 18-25 seconds (see Espresso Doppio)",
       "Add 1oz of simple syrup",
       "Froth 4oz of cold milk until silky and microfoam is present",
       "Add frothed milk on top of coffee"
@@ -1001,7 +1015,7 @@
       "Froth 5oz of cold milk until foamy and silky",
       "Pour milk onto a tumbler glass",
       "Let the milk sit, so that the foam separates from the milk",
-      "Brew 2oz of espresso during 18-25 seconds onto a demitasse",
+      "Brew 2oz of espresso during 18-25 seconds onto a demitasse (see Espresso Doppio)",
       "Stain milk with espresso, pouring over a small area, slowly"
     ],
     "video": "dnGTNh3aDLQ"
@@ -1026,7 +1040,7 @@
       "Froth 5oz of cold milk until foamy and silky",
       "Pour milk onto a tumbler glass",
       "Let the milk sit, so that the foam separates from the milk",
-      "Brew 2oz of espresso during 18-25 seconds onto a demitasse",
+      "Brew 2oz of espresso during 18-25 seconds onto a demitasse (see Espresso Doppio)",
       "Stain milk with espresso, pouring over a small area, slowly",
       "Add caramel drizzle on top of foam"
     ],
@@ -1070,7 +1084,7 @@
     "milkOz": 5,
     "sugar": true,
     "steps": [
-      "Brew 2oz of espresso for 18-25 seconds",
+      "Brew 2oz of espresso for 18-25 seconds (see Espresso Doppio)",
       "Froth 5oz of cold milk until foamy and silky",
       "Add frothed milk on top",
       "Add sugar to taste"
@@ -1093,7 +1107,7 @@
     "heavyCreamOz": 2.5,
     "sugar": true,
     "steps": [
-      "Brew 4oz of espresso (2 espresso doppi during 20-35 seconds each)",
+      "Brew 4oz of espresso (2 espresso doppios during 20-35 seconds each, see Espresso Doppio)",
       "Add 1 teaspoon of brown sugar to an 11oz tumbler glass",
       "Add 2.5oz of heavy cream",
       "Add 2oz of whiskey, the coffee, and whipped cream on top"
@@ -1114,7 +1128,7 @@
     "beerOz": 8,
     "ice": true,
     "steps": [
-      "Brew 2oz of espresso for 18-25 seconds onto a demitasse",
+      "Brew 2oz of espresso for 18-25 seconds onto a demitasse (see Espresso Doppio)",
       "Fill a tumbler glass with ice cubes and beer (lager or shandy)",
       "Add coffee and stir"
     ],
@@ -1141,7 +1155,7 @@
     "tonicWaterOz": 4,
     "ice": true,
     "steps": [
-      "Brew 1oz of espresso for 15 seconds onto a demitasse",
+      "Brew 1oz of espresso for 15 seconds onto a demitasse (see Espresso)",
       "Add ice and 4oz of tonic water to a tumbler glass",
       "Fill a shaker with 1oz of lemon juice, lemon syrup, 1oz of grapefruit juice, 2oz of tequila, the espresso, and some ice",
       "Strain mix onto tumbler glass"

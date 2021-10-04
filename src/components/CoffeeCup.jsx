@@ -129,7 +129,7 @@ export default function CoffeeCup (props) {
         </div>
         <Modal size="lg" backdrop={true} show={showModal} onHide={handleCloseModal}>
           <Modal.Header closeButton>
-            <Modal.Title style={{ fontWeight: "bold" }}>{getFlag(props.country)}{ props.name }</Modal.Title>
+            <Modal.Title className="modal-title">{getFlag(props.country)}{ props.name }</Modal.Title>
           </Modal.Header>
           <Modal.Body className="modal-body">
             <ul>{ props.steps?.map((x, i) => (<li key={i.toString()}>{x}</li>)) }</ul>

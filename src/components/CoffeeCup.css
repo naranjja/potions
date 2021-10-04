@@ -131,6 +131,12 @@
     opacity: 0.4;
 }
 
+.modal-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
 .modal-body, .modal-body * {
     font-family: 'Fira Sans', sans-serif;
     font-size: 20px;
