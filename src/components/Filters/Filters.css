@@ -1,0 +1,15 @@
+.filters {
+    margin-bottom: 50px;
+}
+
+.filters > .row > div {
+    margin-top: 30px;
+}
+
+.filters .form-label {
+    font-weight: 300;
+}
+
+.filter-label-icon {
+    margin-right: 10px;
+}

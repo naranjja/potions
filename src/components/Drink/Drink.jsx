@@ -1,7 +1,7 @@
-import "./CoffeeCup.css";
+import "./Drink.css";
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
-import { toCamelCase, getFlag } from "../lib/utils";
+import { toCamelCase, getFlag } from "../../lib/utils";
 
 function generateCupContent (props) {
   const order = props.order.slice(0).reverse();
@@ -73,7 +73,7 @@ function generateCupContent (props) {
   });
 }
 
-export default function CoffeeCup (props) {  
+export default function Drink (props) {  
 
     const [showModal, setShowModal] = useState(false);
     

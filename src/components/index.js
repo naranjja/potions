@@ -1,4 +1,5 @@
-import CoffeeCup from './CoffeeCup.jsx';
-import Footer from './Footer.jsx';
+import Filters from './Filters/Filters.jsx';
+import Drink from './Drink/Drink.jsx';
+import Footer from './Footer/Footer.jsx';
 
-export { CoffeeCup, Footer };
+export { Filters, Drink, Footer };

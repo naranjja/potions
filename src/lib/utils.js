@@ -27,6 +27,19 @@ export function makespeedScale (speed) {
   </div>
 }
 
+export function getDrinkTypeIcon (drinkType) {
+  if (drinkType === "all") {
+    return null;
+  }
+  return (
+    <img 
+      className="drinkType" 
+      alt={`${drinkType}-drinkType`} 
+      src={`${process.env.PUBLIC_URL}/icons/${drinkType}.png`} 
+    />
+  )
+}
+
 export function getTemperatureIcon (temperature) {
   if (temperature === "all") {
     return null;

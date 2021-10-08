@@ -77,9 +77,16 @@ const parsedRecipes = recipes.map(x => {
         sugar: Boolean(x.sugar),
         lemon: Boolean(x.lemon),
         iceCream: Boolean(x.iceCream),
-        order: x.order,
     }
 });
+
+let drinkTypes = [
+    "coffee",
+    "tea",
+    "cocktail",
+];
+
+drinkTypes = drinkTypes.map(x => ({ value: x, label: toTitleCase(x) }));
 
 let countries = [...new Set(parsedRecipes.map(x => x.country))];
 countries = countries.map(x => ({ value: x, label: toTitleCase(x) }));
@@ -102,6 +109,11 @@ speeds = speeds.map(x => ({ value: x, label: speedMap[x] }));
 
 let parsedNames = parsedRecipes.map(x => x.name);
 parsedNames = parsedNames.map(x => ({ value: x, label: x }));
+
+drinkTypes.unshift({
+    value: "all",
+    label: "All"
+});
 
 countries.unshift({
     value: "all",
@@ -126,6 +138,7 @@ speeds.unshift({
 export { 
     parsedRecipes,
     parsedNames,
+    drinkTypes,
     countries,
     glassTypes,
     temperatures,

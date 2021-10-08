@@ -92,36 +92,21 @@
   margin-bottom: 25px;
 }
 
-.filters {
-  margin-bottom: 50px;
-}
-.filters > .row > div {
-  margin-top: 30px;
-}
-
-.filters .form-label {
-  font-weight: 300;
-}
-
-.filter-label-icon {
-  margin-right: 10px;
-}
-
 .col .card {
   border: none;
   margin-bottom: 40px;
 }
 
-.coffee-name {
+.drink-name {
   font-weight: "bold";
   font-size: 30px;
 }
 
-.coffee-description {
+.drink-description {
   margin-top: 20px;
 }
 
-.flag, .temperature {
+.flag, .temperature, .drinkType {
   width: 20px;
   margin-right: 10px;
   vertical-align: inherit;
@@ -133,7 +118,7 @@
   margin-right: 2px;
 }
 
-.coffee-name, .coffee-glass-type {
+.drink-name, .drink-glass-type {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-style: italic;
