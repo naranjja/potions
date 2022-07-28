@@ -19,7 +19,7 @@ export default function AppBarComponent() {
                     sx={{ flexGrow: 1, display: { sm: 'block' }, textAlign: "center" }}
                 >
                   <ReceiptLong style={{ marginRight: 10 }} />
-                    Recepii
+                    Recepi
               </Typography>
             </Toolbar>
           </AppBar>
