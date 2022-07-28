@@ -1,5 +1,17 @@
 import { useState, forwardRef } from "react";
-import { Button, Autocomplete, TextField, Dialog, AppBar, Toolbar, IconButton, Typography, Slide, Box } from '@mui/material';
+import { 
+    Button, 
+    Autocomplete, 
+    TextField, 
+    Dialog, 
+    AppBar, 
+    Toolbar, 
+    IconButton, 
+    Typography, 
+    Slide, 
+    Box,
+    Stack,
+} from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 
 const Transition = forwardRef(function Transition(props, ref) {
@@ -35,8 +47,12 @@ export default function FullScreenDialog({
         handleClose();
     }
 
-    const applyFilters = () => {
-        //setResults(filterResultsByPoison(recipes, selectedPoisonsTemp));
+    const applyFilterByPoison = () => {
+        setResults(filterResultsByPoison(recipes, selectedPoisonsTemp));
+        handleClose();
+    }
+
+    const applyFilterByIngredient = () => {
         setResults(filterResultsByIngredient(recipes, selectedIngredientsTemp));
         handleClose();
     }
@@ -65,50 +81,68 @@ export default function FullScreenDialog({
                         <Button autoFocus color="inherit" onClick={clearFilters}>
                             Clear
                         </Button>
-                        <Button autoFocus color="inherit" onClick={applyFilters}>
-                            Apply
-                        </Button>
                     </Toolbar>
                 </AppBar>
 
-                <Box padding={5}>
-                    <Typography>Filter by poison</Typography>
-                    <Autocomplete
-                        multiple
-                        options={poisons}
-                        getOptionLabel={(option) => option}
-                        defaultValue={[]}
-                        value={selectedPoisonsTemp}
-                        onChange={(_, val) => {
-                            setSelectedPoisonsTemp(val);
-                        }}
-                        filterSelectedOptions
-                        renderInput={(params) => (
-                            <TextField
-                                {...params}
+                <Box padding={3}>
+                    <form onSubmit={e => {
+                          e.preventDefault();
+                          applyFilterByPoison();
+                    }}>
+                        <Stack spacing={1}>
+                            <Typography>Which recipes contain all of these "poisons"?</Typography>
+                            <Autocomplete
+                                style={{ width: "100%" }}
+                                multiple
+                                options={poisons}
+                                getOptionLabel={(option) => option}
+                                defaultValue={[]}
+                                value={selectedPoisonsTemp}
+                                onChange={(_, val) => {
+                                    setSelectedPoisonsTemp(val);
+                                }}
+                                filterSelectedOptions
+                                renderInput={(params) => (
+                                    <TextField
+                                        {...params}
+                                    />
+                                )}
                             />
-                        )}
-                    />
+                            <Button style={{ padding: 15 }} type="submit" variant="contained">
+                                Apply
+                            </Button>
+                        </Stack>
+                    </form>
                 </Box>
 
-                <Box padding={5}>
-                    <Typography>Filter by ingredients</Typography>
-                    <Autocomplete
-                        multiple
-                        options={ingredients}
-                        getOptionLabel={(option) => option}
-                        defaultValue={[]}
-                        value={selectedIngredientsTemp}
-                        onChange={(_, val) => {
-                            setSelectedIngredientsTemp(val);
-                        }}
-                        filterSelectedOptions
-                        renderInput={(params) => (
-                            <TextField
-                                {...params}
+                <Box padding={3}>
+                    <form onSubmit={e => {
+                        e.preventDefault();
+                        applyFilterByIngredient();
+                    }}>
+                        <Stack spacing={1}>
+                            <Typography>What can I make with these ingredients?</Typography>
+                            <Autocomplete
+                                multiple
+                                options={ingredients}
+                                getOptionLabel={(option) => option}
+                                defaultValue={[]}
+                                value={selectedIngredientsTemp}
+                                onChange={(_, val) => {
+                                    setSelectedIngredientsTemp(val);
+                                }}
+                                filterSelectedOptions
+                                renderInput={(params) => (
+                                    <TextField
+                                        {...params}
+                                    />
+                                )}
                             />
-                        )}
-                    />
+                            <Button style={{ padding: 15 }} type="submit" variant="contained">
+                                Apply
+                            </Button>
+                        </Stack>
+                    </form>
                 </Box>
 
             </Dialog>

@@ -52,7 +52,10 @@ export default function Home({ isConnected, recipes, poisons, ingredients }) {
         />
 
         <Button 
-          onClick={() => setShowFilters(true)}
+          onClick={e => {
+            e.currentTarget.blur();
+            setShowFilters(true);
+          }}
           variant="contained" 
           disableElevation
           style={{ marginLeft: 15, paddingLeft: 25, paddingRight: 25 }}
