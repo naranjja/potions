@@ -4,14 +4,14 @@
 }
 
 .poison_chip {
-  background-color: darkslateblue;
+  background-color: #9878CD;
   color: white;
   font-size: 12px;
   height: 25px;
 }
 
 .tag_chip {
-  background-color: darkslategray;
+  background-color: #4195CB;
   color: white;
   font-size: 12px;
   height: 25px;

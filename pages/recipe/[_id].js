@@ -1,38 +1,19 @@
 import styles from "../../styles/recipe[_id].module.css";
 import clientPromise from '../../lib/mongodb';
-import { Typography, Stack, Paper, TextField, Grid, Box, Divider, ToggleButton, ToggleButtonGroup, createTheme, ThemeProvider } from "@mui/material";
+import { 
+    Typography, 
+    Stack, 
+    Paper, 
+    TextField, 
+    Grid, 
+    Box, 
+    Divider, 
+    ToggleButton, 
+    ToggleButtonGroup, 
+} from "@mui/material";
 import { useState, useEffect } from "react";
+import AppBar from "../../components/AppBar";
 import Footer from "../../components/Footer";
-
-const theme = createTheme({
-    components: {
-        MuiTypography: {
-            variants: [{
-                props: { variant: "headline" },
-                style: {
-                    fontWeight: "bold",
-                }
-            }, {
-                props: { variant: "title" },
-                style: {
-                    fontWeight: "bold",
-                }
-            }, {
-                props: { variant: "comment" },
-                style: {
-                    fontWeight: "light",
-                    fontSize: 14,
-                }
-            }, {
-                props: { variant: "ingredient" },
-                style: {
-                    fontWeight: "light",
-                    fontSize: 16,
-                }
-            }]
-        }
-    }
-});
 
 const updateLabels = (recipe, servings, measurementUnit) => {
     recipe.volume = 0;
@@ -81,14 +62,15 @@ const Recipe = ({ recipe, graphs }) => {
     })
 
     return (
-        <ThemeProvider theme={theme}>
+        <>
+            <AppBar />
             <Stack style={{ marginBottom: 100 }}>
                 <img
                     className={styles.banner_img}
                     src={recipe.banner_img}
                 />
-                <Box padding={3}>
-                    <Typography variant="h4" style={{ textAlign: "center", marginTop: "2rem" }}>
+                <Box padding={3} style={{ textAlign: "center" }}>
+                    <Typography variant="recipe-title">
                         {recipe.name}
                     </Typography>
                 </Box>
@@ -126,7 +108,7 @@ const Recipe = ({ recipe, graphs }) => {
                         <Grid item xs={8}>
                             <Stack>
                                 <Typography variant="headline">Vessel</Typography>
-                                <Typography>{recipe.vessel}</Typography>
+                                <Typography variant="vessel">{recipe.vessel}</Typography>
 
                                 <br></br>
 
@@ -161,7 +143,7 @@ const Recipe = ({ recipe, graphs }) => {
                                                     borderRadius: 8,
                                                     padding: 5
                                             }}>
-                                                <p style={{ fontSize: 11, marginTop: 5, color: "white", wordBreak: "break-all" }}>{ height < 15 ? "" : ing.name }</p>
+                                                <p style={{ fontSize: 14, marginTop: 5, color: "white", wordBreak: "break-all" }}>{ height < 15 ? "" : ing.name }</p>
                                             </Paper>
                                         );
                                     }
@@ -192,7 +174,7 @@ const Recipe = ({ recipe, graphs }) => {
 
             </Stack>
             <Footer />
-        </ThemeProvider>
+        </>
     )
 }
 

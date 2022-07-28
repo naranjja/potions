@@ -65,7 +65,7 @@ export default function FullScreenDialog({
                 onClose={handleClose}
                 TransitionComponent={Transition}
             >
-                <AppBar sx={{ position: 'relative' }}>
+                <AppBar variant="app-bar" sx={{ position: 'relative' }}>
                     <Toolbar>
                         <IconButton
                             edge="start"
@@ -75,10 +75,10 @@ export default function FullScreenDialog({
                         >
                             <CloseIcon />
                         </IconButton>
-                        <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
+                        <Typography sx={{ ml: 2, flex: 1 }} variant="page-title" component="div">
                             Filter recipes
                         </Typography>
-                        <Button autoFocus color="inherit" onClick={clearFilters}>
+                        <Button variant="contained" autoFocus color="error" onClick={clearFilters}>
                             Clear
                         </Button>
                     </Toolbar>
@@ -90,7 +90,7 @@ export default function FullScreenDialog({
                           applyFilterByPoison();
                     }}>
                         <Stack spacing={1}>
-                            <Typography>Which recipes contain all of these "poisons"?</Typography>
+                            <Typography variant="headline">Which recipes contain all of these "poisons"?</Typography>
                             <Autocomplete
                                 style={{ width: "100%" }}
                                 multiple
@@ -108,7 +108,7 @@ export default function FullScreenDialog({
                                     />
                                 )}
                             />
-                            <Button style={{ padding: 15 }} type="submit" variant="contained">
+                            <Button disableElevation style={{ padding: 15 }} type="submit" variant="contained">
                                 Apply
                             </Button>
                         </Stack>
@@ -121,7 +121,7 @@ export default function FullScreenDialog({
                         applyFilterByIngredient();
                     }}>
                         <Stack spacing={1}>
-                            <Typography>What can I make with these ingredients?</Typography>
+                            <Typography variant="headline">What can I make with these ingredients?</Typography>
                             <Autocomplete
                                 multiple
                                 options={ingredients}
@@ -138,7 +138,7 @@ export default function FullScreenDialog({
                                     />
                                 )}
                             />
-                            <Button style={{ padding: 15 }} type="submit" variant="contained">
+                            <Button disableElevation style={{ padding: 15 }} type="submit" variant="contained">
                                 Apply
                             </Button>
                         </Stack>

@@ -7,10 +7,10 @@ import Typography from '@mui/material/Typography';
 export default function AppBarComponent() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed" color="primary" sx={{ top: 'auto', bottom: 0 }}>
+      <AppBar variant="footer" position="fixed" color="primary" sx={{ top: 'auto', bottom: 0 }}>
         <Toolbar>
             <Typography
-                variant="h6"
+                variant="footer"
                 component="div"
                 sx={{ flexGrow: 1, display: { sm: 'block' }, textAlign: "center" }}
             >

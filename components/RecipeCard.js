@@ -17,13 +17,13 @@ const RecipeCard = ({recipe}) => {
                             </Box>
                         </Grid>
                         <Grid item xs={8} zeroMinWidth>
-                            <Box padding={0.5}>
-                                <Stack>
-                                    <Typography variant="h6">
+                            <Box padding={1}>
+                                <Stack paddingTop={1}>
+                                    <Typography variant="recipe-card-title">
                                         {recipe.name}
                                     </Typography>
 
-                                    <Grid style={{ marginTop: 10 }} container spacing={1}>
+                                    <Grid style={{ marginTop: 5 }} container spacing={0.5}>
                                         {recipe.poisons.map((poison, i) => (
                                             <Grid item key={i}>
                                                 <Chip label={poison} className={styles.poison_chip} />
