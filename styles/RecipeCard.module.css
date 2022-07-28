@@ -1,0 +1,18 @@
+.profile_img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.poison_chip {
+  background-color: darkslateblue;
+  color: white;
+  font-size: 12px;
+  height: 25px;
+}
+
+.tag_chip {
+  background-color: darkslategray;
+  color: white;
+  font-size: 12px;
+  height: 25px;
+}
