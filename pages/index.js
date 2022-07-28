@@ -11,12 +11,25 @@ const filterResultsByName = (recipes, searching) => {
 
 const filterResultsByPoison = (recipes, selectedPoisons) => {
   if (selectedPoisons.length > 0) {
-    return recipes.filter(recipe => recipe.poisons.some(x => selectedPoisons.includes(x)));
+    return recipes.filter(recipe => selectedPoisons.every(poison => recipe.poisons.includes(poison)));
   }
   return recipes;
 }
 
-export default function Home({ isConnected, recipes, poisons }) {
+const filterResultsByIngredient = (recipes, selectedIngredients) => {
+  if (selectedIngredients.length > 0) {
+    return recipes.filter(recipe => {
+      return recipe.ingredients.every(x => {
+        const ingredientMatch = selectedIngredients.includes(x.name);
+        const alternativeMatch = x.alternatives ? x.alternatives.some(alt => selectedIngredients.includes(alt)) : false;
+        return ingredientMatch || alternativeMatch;
+      });
+    });
+  }
+  return recipes;
+}
+
+export default function Home({ isConnected, recipes, poisons, ingredients }) {
 
   const [searching, setSearching] = useState("");
   const [showFilters, setShowFilters] = useState(false);
@@ -58,12 +71,15 @@ export default function Home({ isConnected, recipes, poisons }) {
 
         poisons={poisons}
         filterResultsByPoison={filterResultsByPoison}
+
+        ingredients={ingredients}
+        filterResultsByIngredient={filterResultsByIngredient}
       />
 
       <Divider style={{ marginTop: 30, marginBottom: 10 }}>{results.length} RECIPE{results.length !== 1 ? "S" : ""}</Divider>
 
       { isConnected && (
-        <Stack>
+        <Stack spacing={2}>
           {results.map((recipe, i) => (
             <RecipeCard recipe={recipe} key={i} />
           ))}
@@ -84,14 +100,24 @@ export async function getServerSideProps() {
     let poisons = recipes.map(x => x.poisons);
     poisons = [...new Set(poisons.flat())];
 
+    let ingredients = recipes.map(rec => {
+      return rec.ingredients.map(ing => {
+        if (ing.alternatives?.length > 0) {
+          return [ing.name, ...ing.alternatives];
+        }
+        return ing.name;
+      })
+    }).flat();
+    ingredients = [... new Set(ingredients.flat())]
+
     return {
-      props: { isConnected: true, recipes, poisons },
+      props: { isConnected: true, recipes, poisons, ingredients },
     }
 
   } catch (e) {
     console.error(e);
     return {
-      props: { isConnected: false, recipes: [], poisons: [] },
+      props: { isConnected: false, recipes: [], poisons: [], ingredients: [] },
     }
   }
 }

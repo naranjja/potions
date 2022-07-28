@@ -15,9 +15,13 @@ export default function FullScreenDialog({
 
     poisons, 
     filterResultsByPoison,
+
+    ingredients,
+    filterResultsByIngredient,
 }) {
 
     const [selectedPoisonsTemp, setSelectedPoisonsTemp] = useState([]);
+    const [selectedIngredientsTemp, setSelectedIngredientsTemp] = useState([]);
 
     const handleClose = () => {
         setShowFilters(false);
@@ -25,12 +29,15 @@ export default function FullScreenDialog({
 
     const clearFilters = () => {
         setResults(filterResultsByPoison(recipes, []));
+        setResults(filterResultsByIngredient(recipes, []));
         setSelectedPoisonsTemp([]);
+        setSelectedIngredientsTemp([]);
         handleClose();
     }
 
     const applyFilters = () => {
-        setResults(filterResultsByPoison(recipes, selectedPoisonsTemp));
+        //setResults(filterResultsByPoison(recipes, selectedPoisonsTemp));
+        setResults(filterResultsByIngredient(recipes, selectedIngredientsTemp));
         handleClose();
     }
 
@@ -84,6 +91,25 @@ export default function FullScreenDialog({
                     />
                 </Box>
 
+                <Box padding={5}>
+                    <Typography>Filter by ingredients</Typography>
+                    <Autocomplete
+                        multiple
+                        options={ingredients}
+                        getOptionLabel={(option) => option}
+                        defaultValue={[]}
+                        value={selectedIngredientsTemp}
+                        onChange={(_, val) => {
+                            setSelectedIngredientsTemp(val);
+                        }}
+                        filterSelectedOptions
+                        renderInput={(params) => (
+                            <TextField
+                                {...params}
+                            />
+                        )}
+                    />
+                </Box>
 
             </Dialog>
         </div>

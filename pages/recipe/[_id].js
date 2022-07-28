@@ -159,8 +159,9 @@ const Recipe = ({ recipe, graphs }) => {
                                                     height: `${height}%`,
                                                     backgroundColor: color,
                                                     borderRadius: 8,
+                                                    padding: 5
                                             }}>
-                                                <p style={{ marginTop: 10, color: "white", wordBreak: "break-all" }}>{ height < 15 ? "" : ing.name }</p>
+                                                <p style={{ fontSize: 11, marginTop: 5, color: "white", wordBreak: "break-all" }}>{ height < 15 ? "" : ing.name }</p>
                                             </Paper>
                                         );
                                     }
