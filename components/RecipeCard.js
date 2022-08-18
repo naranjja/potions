@@ -1,6 +1,7 @@
 import styles from "../styles/RecipeCard.module.css";
 import { Card, Grid, Box, Stack, Typography, Chip } from "@mui/material";
 import Link from 'next/link'
+import Image from "next/image";
 
 const RecipeCard = ({recipe}) => {
     return (
@@ -10,9 +11,11 @@ const RecipeCard = ({recipe}) => {
                     <Grid container>
                         <Grid item xs={4}>
                             <Box padding={1}>
-                                <img
+                                <Image
                                     className={styles.profile_img}
                                     src={recipe.profile_img}
+                                    width={100}
+                                    height={100}
                                 />
                             </Box>
                         </Grid>

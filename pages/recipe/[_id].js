@@ -14,6 +14,7 @@ import {
 import { useState, useEffect } from "react";
 import AppBar from "../../components/AppBar";
 import Footer from "../../components/Footer";
+import Image from "next/image";
 
 const updateLabels = (recipe, servings, measurementUnit) => {
     recipe.volume = 0;
@@ -65,9 +66,10 @@ const Recipe = ({ recipe, graphs }) => {
         <>
             <AppBar />
             <Stack style={{ marginBottom: 100 }}>
-                <img
-                    className={styles.banner_img}
+                <Image
                     src={recipe.banner_img}
+                    width="100%"
+                    height={300}
                 />
                 <Box padding={3} style={{ textAlign: "center" }}>
                     <Typography variant="recipe-title">

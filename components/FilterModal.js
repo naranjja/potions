@@ -90,7 +90,7 @@ export default function FullScreenDialog({
                           applyFilterByPoison();
                     }}>
                         <Stack spacing={1}>
-                            <Typography variant="headline">Which recipes contain all of these "poisons"?</Typography>
+                            <Typography variant="headline">Which recipes contain all of these?</Typography>
                             <Autocomplete
                                 style={{ width: "100%" }}
                                 multiple
