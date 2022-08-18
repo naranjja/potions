@@ -179,22 +179,41 @@ const Recipe = ({ recipe, graphs }) => {
 }
 
 export async function getStaticPaths() {
-    const client = await clientPromise;
-    const db = await client.db("recepi");
-    const recipes = await db.collection("recipes").find({}, { _id: 1 }).toArray();
-    const paths = recipes.map((recipe) => ({
-        params: { _id: recipe._id.toString() },
-    }))
-    return { paths, fallback: false } // { fallback: false } means other routes should 404.
+    try {
+        const client = await clientPromise;
+        const db = await client.db("recepi");
+        const recipes = await db.collection("recipes").find({}, { _id: 1 }).toArray();
+        const paths = recipes.map((recipe) => ({
+            params: { _id: recipe._id.toString() },
+        }))
+    
+        // { fallback: "blocking" } will server-render pages
+        // on-demand if the path doesn't exist.
+        return { paths, fallback: "blocking" }
+
+    } catch (e) {
+        console.error(e);
+        return { paths: [], fallback: false };
+    }
 }
 
 export async function getStaticProps({ params }) {
-    const client = await clientPromise;
-    const db = await client.db("recepi");
-    const recipeMatches = await db.collection("recipes").find({ _id: params._id }).toArray();
-    const recipe = recipeMatches.length > 0 ? recipeMatches[0] : null;
-    const graphs = await db.collection("graphs").find({}).toArray();
-    return { props: { recipe, graphs } }
+    try {
+        const client = await clientPromise;
+        const db = await client.db("recepi");
+        const recipeMatches = await db.collection("recipes").find({ _id: params._id }).toArray();
+        const recipe = recipeMatches.length > 0 ? recipeMatches[0] : null;
+        const graphs = await db.collection("graphs").find({}).toArray();
+
+        // Next.js will attempt to re-generate the page:
+        // - When a request comes in
+        // - At most once every 10 seconds
+        return { props: { recipe, graphs }, revalidate: 10 };
+
+    } catch (e) {
+        console.error(e);
+        return { props: { recipe: {}, graphs: [] } };
+    }
 }
 
 export default Recipe

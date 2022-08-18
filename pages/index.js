@@ -82,7 +82,7 @@ export default function Home({ isConnected, recipes, poisons, ingredients }) {
       <Divider style={{ marginTop: 30, marginBottom: 10 }}>{results.length} RECIPE{results.length !== 1 ? "S" : ""}</Divider>
 
       { isConnected && (
-        <Stack spacing={2}>
+        <Stack spacing={2} style={{ marginBottom: 100 }}>
           {results.map((recipe, i) => (
             <RecipeCard recipe={recipe} key={i} />
           ))}
@@ -93,11 +93,10 @@ export default function Home({ isConnected, recipes, poisons, ingredients }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   try {
     const client = await clientPromise
     const db = await client.db("recepi")
-
     const recipes = await db.collection("recipes").find({}).toArray();
 
     let poisons = recipes.map(x => x.poisons);
@@ -111,10 +110,14 @@ export async function getServerSideProps() {
         return ing.name;
       })
     }).flat();
-    ingredients = [... new Set(ingredients.flat())]
+    ingredients = [... new Set(ingredients.flat())];
 
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 10 seconds
     return {
       props: { isConnected: true, recipes, poisons, ingredients },
+      revalidate: 10
     }
 
   } catch (e) {
